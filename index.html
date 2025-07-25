@@ -60,6 +60,18 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="assets/js/scripts.js" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentUrl = window.location.href;
+
+      // ตรวจทุกลิงก์ใน navbar
+      document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+        if (link.href && currentUrl.includes(link.href)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 
 
 </body>
