@@ -1,68 +1,114 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" alt="logo" class="img-fluid" width="80" height="80"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../assets/images/logo.png" alt="logo" height="80">
+    </a>
+
+    <!-- Offcanvas toggle button (mobile only) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="mainNav">
+    <!-- Desktop Navigation -->
+    <div class="collapse navbar-collapse d-none d-lg-block" id="mainNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
 
-        <!-- PRODUCT -->
+        <!-- PRODUCT Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown">
-            Product
-          </a>
-          <ul class="dropdown-menu rounded-0 p-1" aria-labelledby="productDropdown">
-
-            <!-- UPS -->
-            <li class="dropdown-submenu rounded-0 p-1">
-              <a class="dropdown-item dropdown-toggle" href="#">UPS</a>
-              <ul class="dropdown-menu rounded-0 p-1">
-                <li><a class="dropdown-item" href="../pages/detail.html?title=EATON%20UPS">EATON UPS</a></li>
-                <li><a class="dropdown-item" href="../pages/detail.html?title=SCHNEIDER%20(APC)">SCHNEIDER (APC)</a></li>
-              </ul>
-            </li>
-
-            <!-- Battery -->
-            <li class="dropdown-submenu rounded-0 p-1">
-              <a class="dropdown-item dropdown-toggle" href="#">Battery</a>
-              <ul class="dropdown-menu rounded-0 p-1">
-
-                <!-- SLA -->
-                <li class="dropdown-submenu rounded-0 p-1">
-                  <a class="dropdown-item dropdown-toggle" href="#">SLA</a>
-                  <ul class="dropdown-menu rounded-0 p-1">
-                    <li><a class="dropdown-item" href="../pages/detail.html?title=VISION%20BATTERY">VISION BATTERY</a></li>
-                    <li><a class="dropdown-item" href="../pages/detail.html?title=FIAMM">FIAMM</a></li>
-                  </ul>
-                </li>
-
-                <!-- Lithium -->
-                <li><a class="dropdown-item" href="../pages/detail.html?title=LI-THIUM%20BATTERY">LI-THIUM BATTERY</a></li>
-              </ul>
-            </li>
-
-            <!-- BMS -->
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/detail.html?title=EATON%20UPS">EATON UPS</a></li>
+            <li><a class="dropdown-item" href="../pages/detail.html?title=SCHNEIDER%20(APC)">SCHNEIDER (APC)</a></li>
+            <li><a class="dropdown-item" href="../pages/detail.html?title=VISION%20BATTERY">VISION BATTERY</a></li>
+            <li><a class="dropdown-item" href="../pages/detail.html?title=FIAMM">FIAMM</a></li>
+            <li><a class="dropdown-item" href="../pages/detail.html?title=LI-THIUM%20BATTERY">LI-THIUM BATTERY</a></li>
             <li><a class="dropdown-item" href="../pages/detail.html?title=Battery%20BMS">Battery BMS</a></li>
           </ul>
         </li>
 
-        <!-- SERVICE -->
+        <!-- Other menu -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Service</a>
-          <ul class="dropdown-menu rounded-0 p-1">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Service</a>
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../pages/detail.html?title=For%20SLA%20Battery">For SLA Battery</a></li>
-            <li><a class="dropdown-item" href="../pages/detail.html?title=For%20Lithium%20Battery">For Lithium Battery</a></li>
+            <li><a class="dropdown-item" href="../pages/detail.html?title=For%20Lithium%20Battery">For Lithium
+                Battery</a></li>
           </ul>
         </li>
-
-        <!-- OTHER -->
         <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Project">Project</a></li>
-        <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Site%20References">Site References</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Site%20References">Site References</a>
+        </li>
         <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Contact%20Us">Contact Us</a></li>
       </ul>
+    </div>
+
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileNav">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title">
+          <img src="../assets/images/logo.png" alt="logo" height="80">
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+
+          <!-- Accordion for Product -->
+          <li class="nav-item">
+            <div class="accordion accordion-flush" id="accordionProduct">
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-white bg-transparent" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-product">
+                    Product
+                  </button>
+                </h2>
+                <div id="flush-product" class="accordion-collapse collapse" data-bs-parent="#accordionProduct">
+                  <ul class="list-unstyled ps-3">
+                    <li><a class="nav-link" href="../pages/detail.html?title=EATON%20UPS">EATON UPS</a></li>
+                    <li><a class="nav-link" href="../pages/detail.html?title=SCHNEIDER%20(APC)">SCHNEIDER (APC)</a></li>
+                    <li><a class="nav-link" href="../pages/detail.html?title=VISION%20BATTERY">VISION BATTERY</a></li>
+                    <li><a class="nav-link" href="../pages/detail.html?title=FIAMM">FIAMM</a></li>
+                    <li><a class="nav-link" href="../pages/detail.html?title=LI-THIUM%20BATTERY">LI-THIUM BATTERY</a>
+                    </li>
+                    <li><a class="nav-link" href="../pages/detail.html?title=Battery%20BMS">Battery BMS</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Accordion for Service -->
+          <li class="nav-item">
+            <div class="accordion accordion-flush" id="accordionService">
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-white bg-transparent" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-service">
+                    Service
+                  </button>
+                </h2>
+                <div id="flush-service" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                  <ul class="list-unstyled ps-3">
+                    <li><a class="nav-link" href="../pages/detail.html?title=For%20SLA%20Battery">For SLA Battery</a>
+                    </li>
+                    <li><a class="nav-link" href="../pages/detail.html?title=For%20Lithium%20Battery">For Lithium
+                        Battery</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Others -->
+          <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Project">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Site%20References">Site
+              References</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Contact%20Us">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

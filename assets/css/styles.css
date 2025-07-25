@@ -41,3 +41,9 @@ nav.navbar {
     background: #2E3092;
     background: linear-gradient(90deg, rgba(46, 48, 146, 1) 0%, rgba(139, 198, 62, 1) 100%);
 }
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    display: none !important;
+  }
+}
