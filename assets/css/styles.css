@@ -73,3 +73,8 @@ nav.navbar {
   color: #ffc107 !important; /* สีเหลือง */
   font-weight: bold;
 }
+
+ul.dropdown-menu.dropdown-submenu-2 {
+    top: 32px;
+    left: 32px;
+}
