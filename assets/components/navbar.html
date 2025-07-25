@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid px-0">
+  <div class="container">
     <a class="navbar-brand" href="../index.html">
       <img src="../assets/images/logo.png" alt="logo" height="80">
     </a>
@@ -10,32 +10,64 @@
     </button>
 
     <!-- Desktop Navigation -->
-    <div class="collapse navbar-collapse d-none d-lg-block" id="mainNav">
+    <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
 
-        <!-- PRODUCT Dropdown -->
+        <!-- PRODUCT -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Product</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="../pages/detail.html?title=EATON%20UPS">EATON UPS</a></li>
-            <li><a class="dropdown-item" href="../pages/detail.html?title=SCHNEIDER%20(APC)">SCHNEIDER (APC)</a></li>
-            <li><a class="dropdown-item" href="../pages/detail.html?title=VISION%20BATTERY">VISION BATTERY</a></li>
-            <li><a class="dropdown-item" href="../pages/detail.html?title=FIAMM">FIAMM</a></li>
-            <li><a class="dropdown-item" href="../pages/detail.html?title=LI-THIUM%20BATTERY">LI-THIUM BATTERY</a></li>
+          <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown">
+            Product
+          </a>
+          <ul class="dropdown-menu rounded-0 p-1" aria-labelledby="productDropdown">
+
+            <!-- UPS -->
+            <li class="dropdown-submenu rounded-0 p-1">
+              <a class="dropdown-item dropdown-toggle" href="#">UPS</a>
+              <ul class="dropdown-menu rounded-0 p-1">
+                <li><a class="dropdown-item" href="../pages/detail.html?title=EATON%20UPS">EATON UPS</a></li>
+                <li><a class="dropdown-item" href="../pages/detail.html?title=SCHNEIDER%20(APC)">SCHNEIDER (APC)</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Battery -->
+            <li class="dropdown-submenu rounded-0 p-1">
+              <a class="dropdown-item dropdown-toggle" href="#">Battery</a>
+              <ul class="dropdown-menu rounded-0 p-1">
+
+                <!-- SLA -->
+                <li class="dropdown-submenu rounded-0 p-1">
+                  <a class="dropdown-item dropdown-toggle" href="#">SLA</a>
+                  <ul class="dropdown-menu rounded-0 p-1">
+                    <li><a class="dropdown-item" href="../pages/detail.html?title=VISION%20BATTERY">VISION BATTERY</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../pages/detail.html?title=FIAMM">FIAMM</a></li>
+                  </ul>
+                </li>
+
+                <!-- Lithium -->
+                <li><a class="dropdown-item" href="../pages/detail.html?title=LI-THIUM%20BATTERY">LI-THIUM BATTERY</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- BMS -->
             <li><a class="dropdown-item" href="../pages/detail.html?title=Battery%20BMS">Battery BMS</a></li>
           </ul>
         </li>
 
-        <!-- Other menu -->
+        <!-- SERVICE -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Service</a>
-          <ul class="dropdown-menu">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Service</a>
+          <ul class="dropdown-menu rounded-0 p-1">
             <li><a class="dropdown-item" href="../pages/detail.html?title=For%20SLA%20Battery">For SLA Battery</a></li>
             <li><a class="dropdown-item" href="../pages/detail.html?title=For%20Lithium%20Battery">For Lithium
                 Battery</a></li>
           </ul>
         </li>
+
+        <!-- OTHER -->
         <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Project">Project</a></li>
         <li class="nav-item"><a class="nav-link" href="../pages/detail.html?title=Site%20References">Site References</a>
         </li>
@@ -47,7 +79,8 @@
     <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="mobileNav">
       <div class="offcanvas-header">
         <div class="offcanvas-title">
-          <img src="../assets/images/logo.png" alt="logo" height="80">
+          <!-- <img src="../assets/images/logo.png" alt="logo" height="80"> -->
+           Menu
         </div>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
       </div>
