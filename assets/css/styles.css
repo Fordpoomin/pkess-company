@@ -8,6 +8,13 @@ body {
     margin-top: 100px;
 }
 
+.navbar {
+    font-family: "K2D", sans-serif !important;
+}
+
+#page-title {
+    padding-top: 30px;
+}
 
 /* Dropdown submenu support with animation */
 .dropdown-submenu {
@@ -44,7 +51,6 @@ body {
 }
 
 /* ไฮไลต์เมนูที่ active */
-.navbar-nav .nav-link.active,
 .dropdown-menu .dropdown-item.active {
     background-color: rgba(255, 255, 255, 0.15);
     color: rgba(139, 198, 62, 1) !important; /* สีเหลือง */
@@ -69,12 +75,51 @@ nav.navbar {
 }
 
 .navbar-nav .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #ffc107 !important; /* สีเหลือง */
-  font-weight: bold;
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    color: #ffc107 !important; /* สีเหลือง */
+    font-weight: bold;
 }
 
 ul.dropdown-menu.dropdown-submenu-2 {
     top: 32px;
     left: 32px;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* ปรับตามต้องการ */
+    background-image: url("../images/banner-1.jpg"); /* ✅ ใช้ภาพของคุณ */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* เงาดำ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner #page-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 200px;
+    }
+
+    .hero-banner #page-title {
+        font-size: 2rem;
+    }
 }

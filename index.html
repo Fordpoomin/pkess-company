@@ -22,6 +22,10 @@
     fetch("assets/components/navbar.html")
       .then(res => res.text())
       .then(html => document.getElementById("navbar-placeholder").innerHTML = html);
+
+    fetch("assets/components/footer.html")
+      .then(res => res.text())
+      .then(html => document.getElementById("footer-placeholder").innerHTML = html);
   </script>
 
   <!-- Content -->
@@ -35,7 +39,7 @@
     <div class="container-fluid px-0 bg-white">
       <img src="assets/images/row1.png" alt="" class="img-fluid w-100">
       <img src="assets/images/row2.png" alt="" class="img-fluid w-100">
-      <img src="assets/images/row3.png" alt="" class="img-fluid w-100">
+      <!-- <img src="assets/images/row3.png" alt="" class="img-fluid w-100"> -->
       <img src="assets/images/row4.png" alt="" class="img-fluid w-100">
       <img src="assets/images/row5-1.png" alt="" class="img-fluid w-100">
       <img src="assets/images/row5-2.png" alt="" class="img-fluid w-100">
@@ -54,7 +58,7 @@
 
   </div>
 
-  <footer>
+  <footer id="footer-placeholder">
 
   </footer>
 
