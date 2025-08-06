@@ -11,40 +11,44 @@
 
 <body>
 
-  <!-- Load navbar -->
+  <!-- Load Navbar -->
   <div id="navbar-placeholder"></div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const title = params.get('title') || "";
-
-    // Load navbar then highlight active menu
-    $('#navbar-placeholder').load('../assets/components/navbar.html', function () {
-      // เมื่อโหลด navbar เสร็จ ค้นหาเมนูที่ตรงกับ title
-      $(`#navbar-placeholder a[href*="${encodeURIComponent(title)}"]`).addClass('active text-warning fw-bold');
-    });
-  </script>
-
-  <!-- Content -->
+  <!-- Hero Banner -->
   <div class="hero-banner content">
     <div class="overlay">
       <h1 id="page-title">Loading...</h1>
     </div>
   </div>
 
-  <div class="container mt-4 ">
-    <!-- Hero Banner -->
+  <!-- Content Section -->
+  <div class="container mt-4">
     <p>รายละเอียดสินค้า/บริการจะปรากฏที่นี่</p>
   </div>
 
-  <!-- แสดงชื่อ title จาก URL -->
+  <!-- Load Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
+    const params = new URLSearchParams(window.location.search);
+    const title = params.get('title') || "";
+
+    // Load navbar and highlight menu
+    $('#navbar-placeholder').load('../assets/components/navbar.html', function () {
+      $(`#navbar-placeholder a[href*="${encodeURIComponent(title)}"]`).addClass('active text-warning fw-bold');
+    });
+
+    // Load footer
+    $('#footer-placeholder').load('../assets/components/footer.html');
+
+    // Set page title from URL
     const pageTitle = decodeURIComponent(title || '');
     document.getElementById('page-title').textContent = pageTitle || 'ไม่มีหัวข้อ';
   </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
