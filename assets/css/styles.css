@@ -89,7 +89,7 @@ ul.dropdown-menu.dropdown-submenu-2 {
     position: relative;
     width: 100%;
     height: 300px; /* ปรับตามต้องการ */
-    background-image: url("../images/banner-1.jpg"); /* ✅ ใช้ภาพของคุณ */
+    background-image: url(".assets/images/banner-1.jpg"); /* ✅ ใช้ภาพของคุณ */
     background-size: cover;
     background-position: center;
     display: flex;
