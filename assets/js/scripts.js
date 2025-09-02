@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 cat
             )}"][href*="subcategory=${enc(sub)}"]`;
         } else if (cat && det) {
-            // หน้า category + detail -> ไฮไลต์รายการ detail เท่านั้น (เช่น BMS -> Cell Watch)
+            // หน้า category + detail -> ไฮไลต์รายการ detail เท่านั้น (เช่น BMS -> Cellwatch)
             selector = `.dropdown-menu a[href*="category=${enc(
                 cat
             )}"][href*="detail=${enc(det)}"]`;

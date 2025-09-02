@@ -251,9 +251,9 @@
     "BMS": {
         "_items": [
             {
-                "title": "Cell Watch Eaton",
+                "title": "Cellwatch Eaton",
                 "img": "../assets/images/products/Cellwatch.jpg",
-                "link": "./detail.html?category=BMS&detail=Cell%20Watch%20Eaton"
+                "link": "./detail.html?category=BMS&detail=Cellwatch%20Eaton"
             },
             {
                 "title": "PKBMS",

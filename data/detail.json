@@ -403,7 +403,7 @@
 
     "BMS": {
         "": {
-            "Cell Watch Eaton": {
+            "Cellwatch Eaton": {
                 "imgs": [
                     "../assets/images/products/Cellwatch.jpg",
                     "../assets/images/products/eaton-cell-watch-01.png",
@@ -416,7 +416,7 @@
                     "../assets/images/products/eaton-cell-watch-08.png",
                     "../assets/images/products/eaton-cell-watch-09.png"
                 ],
-                "html": "<p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cell Watch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ IR แบบเรียลไทม์ รองรับ Multi-string, Web dashboard/Alarm และ Modbus/TCP</p>"
+                "html": "<p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cellwatch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ IR แบบเรียลไทม์ รองรับ Multi-string, Web dashboard/Alarm และ Modbus/TCP</p>"
             },
             "PBMS9000Pro": {
                 "imgs": [
