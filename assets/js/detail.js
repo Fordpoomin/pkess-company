@@ -1,3 +1,4 @@
+// detail.js
 const q = new URLSearchParams(location.search);
 const category = decodeURIComponent(q.get("category") || "");
 const subcategory = decodeURIComponent(q.get("subcategory") || "");
@@ -68,7 +69,7 @@ async function initDetail() {
             imgEl.src =
                 data.imgs && data.imgs[0]
                     ? data.imgs[0]
-                    : "../assets/images/products/placeholder.png";
+                    : "../assets/images/placeholder.png";
             imgEl.alt = detail;
             contentEl.innerHTML = data.html;
 
@@ -82,7 +83,7 @@ async function initDetail() {
             }
         } else {
             titleEl.textContent = detail || "Detail";
-            imgEl.src = "../assets/images/products/placeholder.png";
+            imgEl.src = "../assets/images/placeholder.png";
             imgEl.alt = "no image";
             contentEl.innerHTML = `<p class="text-muted">Coming soon...</p>`;
         }
@@ -92,7 +93,7 @@ async function initDetail() {
             "detail-content"
         ).innerHTML = `<div class="alert alert-danger">ไม่สามารถโหลดข้อมูลสินค้าได้</div>`;
         document.getElementById("detail-image").src =
-            "../assets/images/products/placeholder.png";
+            "../assets/images/placeholder.png";
     }
 }
 

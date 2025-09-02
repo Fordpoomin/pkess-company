@@ -1,35 +1,45 @@
+// category.js
 const q = new URLSearchParams(location.search);
 const category = decodeURIComponent(q.get("category") || "");
 const subcategory = decodeURIComponent(q.get("subcategory") || "");
 
-// Navbar highlight
-$("#navbar-placeholder").load("../assets/components/navbar.html", function () {
-    $(`#navbar-placeholder .dropdown-menu a:contains("${category}")`)
-        .first()
-        .closest(".dropdown")
-        .find("> .nav-link")
-        .addClass("active text-warning fw-bold");
-});
+$("#navbar-placeholder").load("../assets/components/navbar.html");
 $("#footer-placeholder").load("../assets/components/footer.html");
 
 // Breadcrumb + Hero
-const bcCat = document.getElementById("bc-category");
-const bcSub = document.getElementById("bc-subcategory");
+const bcCat = document.getElementById("bc-category"); // <a>
+const bcCatLi = bcCat.parentElement; // <li> ของ Category
+const bcSub = document.getElementById("bc-subcategory"); // <li> ที่เป็น active
+const bcOl = document.querySelector("ol.breadcrumb"); // <ol>
 const heroTitle = document.getElementById("hero-title");
 const heroSub = document.getElementById("hero-sub");
 
+// กันเคยโดนซ่อนด้วย inline style
+bcOl?.style.removeProperty("display");
+
 if (subcategory) {
+    // มี subcategory -> Home / <Category>(link) / <Subcategory>(active)
     heroTitle.textContent = subcategory;
     heroSub.textContent = category;
+
     bcCat.textContent = category || "Category";
     bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;
-    bcSub.textContent = subcategory;
+    bcCatLi.style.removeProperty("display");
+
+    bcSub.textContent = subcategory; // active (เป็น <li> อยู่แล้ว)
+    bcSub.classList.add("active");
 } else {
+    // ไม่มี subcategory -> Home / <Category>(active)
     heroTitle.textContent = category || "Category";
     heroSub.textContent = "";
-    bcCat.textContent = category || "Category";
-    bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;
-    bcSub.parentElement.style.display = "none";
+
+    // ซ่อน crumb "Category" (ตัวกลาง) ออกไปเลย
+    bcCatLi.style.display = "none";
+
+    // ใช้ <li id="bc-subcategory"> เป็น crumb สุดท้าย (active) แทน
+    bcSub.textContent = category || "Category";
+    bcSub.classList.add("active");
+    bcSub.style.removeProperty("display");
 }
 
 // ---------- Load from JSON ----------
@@ -80,21 +90,20 @@ async function initCategory() {
                     .map((sub) => {
                         const first = catData[sub][0] || {};
                         const firstImg =
-                            first.img ||
-                            "../assets/images/products/placeholder.png";
+                            first.img || "../assets/images/placeholder.png";
                         const href = `./category.html?category=${encodeURIComponent(
                             category
                         )}&subcategory=${encodeURIComponent(sub)}`;
                         return `
-              <div class="col-6 col-md-4 col-lg-3">
-                <a href="${href}" class="text-decoration-none text-dark d-block h-100">
-                  <div class="card-product">
-                    <div class="thumb"><img src="${firstImg}" alt="${sub}"></div>
-                    <div class="title"><span>${sub}</span></div>
-                  </div>
-                </a>
-              </div>
-            `;
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <a href="${href}" class="text-decoration-none text-dark d-block h-100">
+                            <div class="card-product">
+                              <div class="thumb"><img src="${firstImg}" alt="${sub}"></div>
+                              <div class="title"><span>${sub}</span></div>
+                            </div>
+                          </a>
+                        </div>
+                      `;
                     })
                     .join("");
             }

@@ -77,7 +77,7 @@ footer#footer-placeholder {
 /* ไฮไลต์เมนูที่ active */
 .dropdown-menu .dropdown-item.active {
     background-color: rgba(255, 255, 255, 0.15);
-    color: rgba(139, 198, 62, 1) !important; /* สีเหลือง */
+    color: rgba(139, 198, 62, 1) ; /* สีเหลือง */
     font-weight: bold;
 }
 
