@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Category</title>
@@ -7,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/styles.css" rel="stylesheet" />
 </head>
+
 <body>
   <!-- Navbar -->
   <div id="navbar-placeholder"></div>
@@ -39,30 +41,25 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // อ่านพารามิเตอร์
     const q = new URLSearchParams(location.search);
     const category = decodeURIComponent(q.get('category') || '');
     const subcategory = decodeURIComponent(q.get('subcategory') || '');
 
-    // โหลด navbar + highlight
     $('#navbar-placeholder').load('../assets/components/navbar.html', function () {
-      // ไฮไลท์เมนูหลักตามชื่อ category
       $(`#navbar-placeholder .dropdown-menu a:contains("${category}")`).first()
         .closest('.dropdown').find('> .nav-link').addClass('active text-warning fw-bold');
     });
 
-    // โหลด footer
     $('#footer-placeholder').load('../assets/components/footer.html');
 
-    // ตั้งค่า hero + breadcrumb
     document.getElementById('hero-title').textContent = subcategory || 'Category';
     document.getElementById('hero-sub').textContent = category || '';
     document.getElementById('bc-category').textContent = category || 'Category';
-    document.getElementById('bc-category').href = `./detail-category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(subcategory)}`;
+    document.getElementById('bc-category').href =
+      `./detail-category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(subcategory)}`;
     document.getElementById('bc-subcategory').textContent = subcategory;
 
-    // ----- ตัวอย่างข้อมูลหมวดย่อย -----
-    // หมายเหตุ: ตรงนี้สามารถเปลี่ยนไปดึงจากไฟล์ JSON/API ได้ในอนาคต
+    // ----- DATA (เพิ่ม Battery Monitoring system) -----
     const CATEGORY_DATA = {
       "Battery": {
         "Batt Mon": [
@@ -70,6 +67,11 @@
             title: "Cell Watch Eaton",
             img: "../assets/images/products/Cellwatch.jpg",
             link: `./detail.html?category=Battery&subcategory=Batt%20Mon&detail=Cell%20Watch%20Eaton`
+          },
+          {
+            title: "Battery Monitoring system",
+            img: "../assets/images/products/PBMS9000Pro.png",
+            link: `./detail.html?category=Battery&subcategory=Batt%20Mon&detail=Battery%20Monitoring%20system`
           },
           {
             title: "PKBMS",
@@ -80,7 +82,6 @@
       }
     };
 
-    // สร้างการ์ดในหน้า category
     const grid = document.getElementById('category-grid');
     const items = (CATEGORY_DATA[category] || {})[subcategory] || [];
 
@@ -89,11 +90,13 @@
     } else {
       grid.innerHTML = items.map(it => `
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="${it.link}" class="text-decoration-none text-dark">
-            <div class="card h-100 shadow-sm">
-              <img src="${it.img}" class="card-img-top" alt="${it.title}">
-              <div class="card-body text-center">
-                <h6 class="card-title mb-0">${it.title}</h6>
+          <a href="${it.link}" class="text-decoration-none text-dark d-block h-100">
+            <div class="card-product">
+              <div class="thumb">
+                <img src="${it.img}" alt="${it.title}">
+              </div>
+              <div class="title">
+                <span>${it.title}</span>
               </div>
             </div>
           </a>
@@ -102,4 +105,5 @@
     }
   </script>
 </body>
+
 </html>

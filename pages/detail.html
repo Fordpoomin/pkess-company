@@ -51,12 +51,10 @@
         </div>
       </div>
     </div>
+
     <div class="col-12" id="image-row">
       <!-- Image Row render -->
     </div>
-
-
-    <!-- อาจมีแกลเลอรี/สเปค/ดาวน์โหลด เพิ่มเติมภายหลัง -->
   </div>
 
   <!-- Footer -->
@@ -85,10 +83,12 @@
     document.getElementById('bc-category').textContent = category || 'Category';
     document.getElementById('bc-subcategory').textContent = subcategory || 'Subcategory';
     document.getElementById('bc-detail').textContent = detail || 'Detail';
-    document.getElementById('bc-category').href = `./detail-category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(subcategory)}`;
-    document.getElementById('bc-subcategory').href = `./detail-category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(subcategory)}`;
+    document.getElementById('bc-category').href =
+      `./detail-category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(subcategory)}`;
+    document.getElementById('bc-subcategory').href =
+      `./detail-category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(subcategory)}`;
 
-    // ----- ตัวอย่างข้อมูล detail -----
+    // ----- DATA -----
     const DETAIL_DATA = {
       "Battery": {
         "Batt Mon": {
@@ -106,19 +106,18 @@
               "../assets/images/products/eaton-cell-watch-09.png"
             ],
             html: `
-          <p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cell Watch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ internal resistance แบบ real-time พร้อมการแจ้งเตือน</p>
-          <ul>
-            <li>รองรับ multi-string</li>
-            <li>Web dashboard / Alarm</li>
-            <li>รองรับการเชื่อมต่อ Modbus/TCP</li>
-          </ul>
-        `
+              <p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cell Watch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ internal resistance แบบ real-time พร้อมการแจ้งเตือน</p>
+              <ul>
+                <li>รองรับ multi-string</li>
+                <li>Web dashboard / Alarm</li>
+                <li>รองรับการเชื่อมต่อ Modbus/TCP</li>
+              </ul>
+            `
           },
-          "PKBMS": {
+
+          "Battery Monitoring system": {
             imgs: [
-              "../assets/images/products/PKBMS.png",
-              "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0001.jpg",
-              "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0002.jpg",
+              "../assets/images/products/PBMS9000Pro.png",
               "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0001.jpg",
               "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0002.jpg",
               "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0003.jpg",
@@ -127,31 +126,47 @@
               "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0006.jpg"
             ],
             html: `
-          <p><strong>PKBMS</strong> โซลูชัน Battery Management System ที่ออกแบบโดย PK Engineering สำหรับงานอุตสาหกรรม</p>
-          <ul>
-            <li>Cell/Pack monitoring</li>
-            <li>Safety cut-off & balancing</li>
-            <li>Integration ได้กับ SCADA/EMS</li>
-          </ul>
-        `
+              <p><strong>Battery Monitoring system</strong> โซลูชันติดตามสถานะแบตเตอรี่แบบเรียลไทม์ ครอบคลุมแรงดัน, กระแส, อุณหภูมิ, IR พร้อมระบบแจ้งเตือนและรายงาน</p>
+              <ul>
+                <li>รองรับ Multi-String / Multi-Bank</li>
+                <li>Dashboard และ Alarm ผ่าน Web</li>
+                <li>รองรับ Modbus/TCP, Integration กับ SCADA/EMS</li>
+              </ul>
+            `
+          },
+
+          "PKBMS": {
+            imgs: [
+              "../assets/images/products/PKBMS.png",
+              "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0001.jpg",
+              "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0002.jpg",
+            ],
+            html: `
+              <p><strong>PKBMS</strong> โซลูชัน Battery Management System ที่ออกแบบโดย PK Engineering สำหรับงานอุตสาหกรรม</p>
+              <ul>
+                <li>Cell/Pack monitoring</li>
+                <li>Safety cut-off & balancing</li>
+                <li>Integration ได้กับ SCADA/EMS</li>
+              </ul>
+            `
           }
         },
+
         "": {
           "Battery FIAMM": {
             imgs: ["../assets/images/products/sample-fiamm.png"],
             html: `
-          <p><strong>Battery FIAMM</strong> แบตเตอรี่คุณภาพจากอิตาลี มีทั้งรุ่น SLA และ Industrial</p>
-          <ul>
-            <li>อายุการใช้งานยาวนาน</li>
-            <li>เหมาะกับ UPS/Telecom/Data Center</li>
-            <li>รับประกันและบริการหลังการขาย</li>
-          </ul>
-        `
+              <p><strong>Battery FIAMM</strong> แบตเตอรี่คุณภาพจากอิตาลี มีทั้งรุ่น SLA และ Industrial</p>
+              <ul>
+                <li>อายุการใช้งานยาวนาน</li>
+                <li>เหมาะกับ UPS/Telecom/Data Center</li>
+                <li>รับประกันและบริการหลังการขาย</li>
+              </ul>
+            `
           }
         }
       }
     };
-
 
     function getDetailData(cat, sub, name) {
       const byCat = DETAIL_DATA[cat] || {};
@@ -167,18 +182,18 @@
 
     if (data) {
       titleEl.textContent = detail;
-      imgEl.src = data.imgs ? data.imgs[0] : "";
+      imgEl.src = data.imgs ? data.imgs[0] : "../assets/images/products/placeholder.png";
       imgEl.alt = detail;
       contentEl.innerHTML = data.html;
 
-      // render รูปเพิ่มเติม (ถ้ามีเกิน 1)
+      // รูปเพิ่มเติมเรียงลงล่างแบบเต็มความกว้าง
       if (data.imgs && data.imgs.length > 1) {
         let html = `<div class="row mt-4 rounded m-0">`;
         data.imgs.slice(1).forEach(src => {
           html += `
-        <div class="col-12 px-0">
-          <img src="${src}" class="img-fluid w-100" alt="${detail}">
-        </div>`;
+            <div class="col-12 px-0">
+              <img src="${src}" class="img-fluid w-100" alt="${detail}">
+            </div>`;
         });
         html += `</div>`;
         imageRow.innerHTML = html;
@@ -189,7 +204,6 @@
       imgEl.alt = "no image";
       contentEl.innerHTML = `<p class="text-muted">Coming soon...</p>`;
     }
-
   </script>
 </body>
 
