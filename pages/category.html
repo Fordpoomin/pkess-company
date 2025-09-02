@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <title>Category</title>
@@ -42,7 +41,7 @@
 
   <!-- Content -->
   <div class="container my-4 content">
-    <!-- รายการตรงของ Category -->
+    <!-- รายการตรงของ Category (เช่น BMS) -->
     <div id="direct-items-section" class="mb-4" style="display:none;">
       <h5 class="mb-3">Items</h5>
       <div id="direct-items-grid" class="row g-4"></div>
@@ -69,7 +68,7 @@
   <script src="../assets/js/scripts.js"></script>
   <script>
     const q = new URLSearchParams(location.search);
-    const category = decodeURIComponent(q.get('category') || '');
+    const category   = decodeURIComponent(q.get('category') || '');
     const subcategory = decodeURIComponent(q.get('subcategory') || '');
 
     // Navbar highlight
@@ -80,101 +79,131 @@
     $('#footer-placeholder').load('../assets/components/footer.html');
 
     // Breadcrumb + Hero
-    const bcCat = document.getElementById('bc-category');
-    const bcSub = document.getElementById('bc-subcategory');
+    const bcCat     = document.getElementById('bc-category');
+    const bcSub     = document.getElementById('bc-subcategory');
     const heroTitle = document.getElementById('hero-title');
-    const heroSub = document.getElementById('hero-sub');
+    const heroSub   = document.getElementById('hero-sub');
 
     if (subcategory) {
       heroTitle.textContent = subcategory;
-      heroSub.textContent = category;
-      bcCat.textContent = category || 'Category';
-      bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;
-      bcSub.textContent = subcategory;
+      heroSub.textContent   = category;
+      bcCat.textContent     = category || 'Category';
+      bcCat.href            = `./category.html?category=${encodeURIComponent(category)}`;
+      bcSub.textContent     = subcategory;
     } else {
       heroTitle.textContent = category || 'Category';
-      heroSub.textContent = '';
-      bcCat.textContent = category || 'Category';
-      bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;
+      heroSub.textContent   = '';
+      bcCat.textContent     = category || 'Category';
+      bcCat.href            = `./category.html?category=${encodeURIComponent(category)}`;
       bcSub.parentElement.style.display = 'none';
     }
 
     // ---------- DATA ----------
-    // รายการรุ่น FIAMM (ตามชื่อไฟล์)
     const FIAMM_MODELS = [
-      '12FLB100P', '12FLB150P', '12FLB200P', '12FLB250P',
-      '12FLB300P', '12FLB350P', '12FLB400P', '12FLB450P', '12FLB540P'
+      '12FLB100P','12FLB150P','12FLB200P','12FLB250P',
+      '12FLB300P','12FLB350P','12FLB400P','12FLB450P','12FLB540P'
     ];
 
-    // helper: สร้างรายการการ์ดจาก list รุ่น
     const buildFiammItems = () => FIAMM_MODELS.map(code => {
       const title = `FIAMM ${code}`;
-      const img = `../assets/images/products/Battery%20FIAMM/fiamm-${code.toLowerCase()}.jpg`;
-      const link =
-        `./detail.html?category=${encodeURIComponent('Battery')}` +
-        `&subcategory=${encodeURIComponent('Battery FIAMM')}` +
-        `&detail=${encodeURIComponent(title)}`;
+      const img   = `../assets/images/products/Battery%20FIAMM/fiamm-${code.toLowerCase()}.jpg`;
+      const link  = `./detail.html?category=${encodeURIComponent('Battery VRLA')}`
+                  + `&subcategory=${encodeURIComponent('FIAMM')}`
+                  + `&detail=${encodeURIComponent(title)}`;
       return { title, img, link };
     });
 
     const CATEGORY_DATA = {
-      "Battery": {
-        _items: [
+      // ===== UPS =====
+      "UPS": {
+        "EATON UPS": [
           {
-            title: "LI-THIUM BATTERY",
+            title: "EATON UPS",
             img: "../assets/images/products/placeholder.png",
-            link: `./detail.html?category=${encodeURIComponent('Battery')}&detail=${encodeURIComponent('LI-THIUM BATTERY')}`
+            link: `./detail.html?category=${encodeURIComponent('UPS')}&subcategory=${encodeURIComponent('EATON UPS')}&detail=${encodeURIComponent('EATON UPS')}`
           }
         ],
-        "Battery FIAMM": buildFiammItems(),   // <<— รายการรุ่นจากรูป
-        "SLA": [
+        "SCHNEIDER (APC)": [
           {
-            title: "VISION BATTERY",
+            title: "SCHNEIDER (APC)",
             img: "../assets/images/products/placeholder.png",
-            link: `./detail.html?category=${encodeURIComponent('Battery')}&subcategory=${encodeURIComponent('SLA')}&detail=${encodeURIComponent('VISION BATTERY')}`
-          },
-          {
-            title: "FIAMM",
-            img: "../assets/images/products/placeholder.png",
-            link: `./detail.html?category=${encodeURIComponent('Battery')}&subcategory=${encodeURIComponent('SLA')}&detail=${encodeURIComponent('FIAMM')}`
+            link: `./detail.html?category=${encodeURIComponent('UPS')}&subcategory=${encodeURIComponent('SCHNEIDER (APC)')}&detail=${encodeURIComponent('SCHNEIDER (APC)')}`
           }
         ]
       },
 
-      "Battery BMS": {
-        "Batt Mon": [
+      // ===== Battery VRLA =====
+      "Battery VRLA": {
+        "FIAMM": buildFiammItems(),
+        "VISION": [
+          {
+            title: "VISION VRLA",
+            img: "../assets/images/products/placeholder.png",
+            link: `./detail.html?category=${encodeURIComponent('Battery VRLA')}&subcategory=${encodeURIComponent('VISION')}&detail=${encodeURIComponent('VISION VRLA')}`
+          }
+        ],
+        "PKESS": [
+          {
+            title: "PKESS VRLA",
+            img: "../assets/images/products/placeholder.png",
+            link: `./detail.html?category=${encodeURIComponent('Battery VRLA')}&subcategory=${encodeURIComponent('PKESS')}&detail=${encodeURIComponent('PKESS VRLA')}`
+          }
+        ],
+        "Sacred Sun": [
+          {
+            title: "Sacred Sun VRLA",
+            img: "../assets/images/products/placeholder.png",
+            link: `./detail.html?category=${encodeURIComponent('Battery VRLA')}&subcategory=${encodeURIComponent('Sacred Sun')}&detail=${encodeURIComponent('Sacred Sun VRLA')}`
+          }
+        ]
+      },
+
+      // ===== Battery Lithium =====
+      "Battery Lithium": {
+        "VISION": [
+          {
+            title: "VISION Lithium",
+            img: "../assets/images/products/placeholder.png",
+            link: `./detail.html?category=${encodeURIComponent('Battery Lithium')}&subcategory=${encodeURIComponent('VISION')}&detail=${encodeURIComponent('VISION Lithium')}`
+          }
+        ]
+      },
+
+      // ===== BMS (ไม่มี subcategory) =====
+      "BMS": {
+        _items: [
           {
             title: "Cell Watch Eaton",
             img: "../assets/images/products/Cellwatch.jpg",
-            link: `./detail.html?category=${encodeURIComponent('Battery BMS')}&subcategory=${encodeURIComponent('Batt Mon')}&detail=${encodeURIComponent('Cell Watch Eaton')}`
-          },
-          {
-            title: "PBMS9000Pro",
-            img: "../assets/images/products/PBMS9000Pro.png",
-            link: `./detail.html?category=${encodeURIComponent('Battery BMS')}&subcategory=${encodeURIComponent('Batt Mon')}&detail=${encodeURIComponent('PBMS9000Pro')}`
+            link: `./detail.html?category=${encodeURIComponent('BMS')}&detail=${encodeURIComponent('Cell Watch Eaton')}`
           },
           {
             title: "PKBMS",
             img: "../assets/images/products/PKBMS.png",
-            link: `./detail.html?category=${encodeURIComponent('Battery BMS')}&subcategory=${encodeURIComponent('Batt Mon')}&detail=${encodeURIComponent('PKBMS')}`
+            link: `./detail.html?category=${encodeURIComponent('BMS')}&detail=${encodeURIComponent('PKBMS')}`
+          },
+          {
+            title: "PBMS9000Pro",
+            img: "../assets/images/products/PBMS9000Pro.png",
+            link: `./detail.html?category=${encodeURIComponent('BMS')}&detail=${encodeURIComponent('PBMS9000Pro')}`
           }
         ]
       }
     };
 
     // ---------- Render ----------
-    const subGrid = document.getElementById('category-grid');
-    const directSection = document.getElementById('direct-items-section');
-    const directGrid = document.getElementById('direct-items-grid');
-    const subSection = document.getElementById('subcategory-section');
-    const subItemsSection = document.getElementById('sub-items-section');
-    const subItemsTitle = document.getElementById('sub-items-title');
-    const subItemsGrid = document.getElementById('sub-items-grid');
+    const subGrid        = document.getElementById('category-grid');
+    const directSection  = document.getElementById('direct-items-section');
+    const directGrid     = document.getElementById('direct-items-grid');
+    const subSection     = document.getElementById('subcategory-section');
+    const subItemsSection= document.getElementById('sub-items-section');
+    const subItemsTitle  = document.getElementById('sub-items-title');
+    const subItemsGrid   = document.getElementById('sub-items-grid');
 
     const catData = CATEGORY_DATA[category] || {};
 
     if (!subcategory) {
-      // รายการตรง
+      // รายการตรง (เช่น BMS)
       const directItems = catData._items || [];
       if (directItems.length > 0) {
         directSection.style.display = '';
@@ -190,7 +219,7 @@
         `).join('');
       }
 
-      // หมวดย่อย
+      // หมวดย่อยทั้งหมด
       const subs = Object.keys(catData).filter(k => k !== '_items');
       if (subs.length > 0) {
         subSection.style.display = '';
@@ -211,30 +240,27 @@
       }
 
       if (directItems.length === 0 && subs.length === 0) {
-        subGrid.innerHTML = '<p class="text-muted text-center">No items found in this category.</p>';
         subSection.style.display = '';
+        subGrid.innerHTML = '<p class="text-muted text-center">No items found in this category.</p>';
       }
     } else {
       // ภายในหมวดย่อย
       const items = (catData[subcategory] || []);
       subItemsSection.style.display = '';
       subItemsTitle.textContent = subcategory;
-      if (items.length === 0) {
-        subItemsGrid.innerHTML = '<p class="text-muted text-center">No items found in this subcategory.</p>';
-      } else {
-        subItemsGrid.innerHTML = items.map(it => `
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="${it.link}" class="text-decoration-none text-dark d-block h-100">
-              <div class="card-product">
-                <div class="thumb"><img src="${it.img}" alt="${it.title}"></div>
-                <div class="title"><span>${it.title}</span></div>
-              </div>
-            </a>
-          </div>
-        `).join('');
-      }
+      subItemsGrid.innerHTML = items.length
+        ? items.map(it => `
+            <div class="col-6 col-md-4 col-lg-3">
+              <a href="${it.link}" class="text-decoration-none text-dark d-block h-100">
+                <div class="card-product">
+                  <div class="thumb"><img src="${it.img}" alt="${it.title}"></div>
+                  <div class="title"><span>${it.title}</span></div>
+                </div>
+              </a>
+            </div>
+          `).join('')
+        : '<p class="text-muted text-center">No items found in this subcategory.</p>';
     }
   </script>
 </body>
-
 </html>

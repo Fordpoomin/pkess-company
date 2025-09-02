@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <title>Detail</title>
@@ -8,19 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/styles.css" rel="stylesheet" />
   <link href="../assets/css/loding.css" rel="stylesheet">
-  <style>
-    .breadcrumb-item a {
-      text-decoration: none !important;
-    }
-  </style>
+  <style>.breadcrumb-item a{ text-decoration:none !important; }</style>
 </head>
 
 <body>
-
-  <!-- Loader Overlay -->
+  <!-- Loader -->
   <div id="page-loader">
     <div class="loader-card">
-      <div class="spinner-border text-light" role="status" style="width: 3rem; height: 3rem;">
+      <div class="spinner-border text-light" role="status" style="width:3rem;height:3rem;">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
@@ -56,9 +50,7 @@
         </div>
         <div class="col-12 col-lg-7">
           <h3 id="detail-title" class="mb-3">Title</h3>
-          <div id="detail-content" class="text-secondary">
-            รายละเอียด...
-          </div>
+          <div id="detail-content" class="text-secondary">รายละเอียด...</div>
         </div>
       </div>
     </div>
@@ -73,29 +65,31 @@
   <script src="../assets/js/scripts.js"></script>
   <script>
     const q = new URLSearchParams(location.search);
-    const category = decodeURIComponent(q.get('category') || '');
+    const category    = decodeURIComponent(q.get('category') || '');
     const subcategory = decodeURIComponent(q.get('subcategory') || '');
-    const detail = decodeURIComponent(q.get('detail') || '');
+    const detail      = decodeURIComponent(q.get('detail') || '');
 
-    // Navbar
+    // Navbar + footer
     $('#navbar-placeholder').load('../assets/components/navbar.html', function () {
-      $(`#navbar-placeholder .dropdown-menu a:contains("${category}")`).first()
-        .closest('.dropdown').find('> .nav-link').addClass('active text-warning fw-bold');
+      if (category) {
+        $(`#navbar-placeholder .dropdown-menu a:contains("${category}")`).first()
+          .closest('.dropdown').find('> .nav-link').addClass('active text-warning fw-bold');
+      }
     });
     $('#footer-placeholder').load('../assets/components/footer.html');
 
-    // Breadcrumb + Hero (รองรับกรณีไม่มี subcategory)
+    // Hero & breadcrumb
     const heroTitle = document.getElementById('hero-title');
-    const heroSub = document.getElementById('hero-sub');
-    const bcCat = document.getElementById('bc-category');
-    const bcSub = document.getElementById('bc-subcategory');
-    const bcSubLi = bcSub.parentElement;
-    const bcDetail = document.getElementById('bc-detail');
+    const heroSub   = document.getElementById('hero-sub');
+    const bcCat     = document.getElementById('bc-category');
+    const bcSub     = document.getElementById('bc-subcategory');
+    const bcSubLi   = bcSub.parentElement;
+    const bcDetail  = document.getElementById('bc-detail');
 
     heroTitle.textContent = detail || 'Detail';
-    heroSub.textContent = subcategory ? `${category} • ${subcategory}` : `${category}`;
-    bcCat.textContent = category || 'Category';
-    bcDetail.textContent = detail || 'Detail';
+    heroSub.textContent   = subcategory ? `${category} • ${subcategory}` : `${category}`;
+    bcCat.textContent     = category || 'Category';
+    bcDetail.textContent  = detail || 'Detail';
 
     if (subcategory) {
       bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;
@@ -109,21 +103,18 @@
 
     // ---------- DATA ----------
     const FIAMM_MODELS = [
-      '12FLB100P', '12FLB150P', '12FLB200P', '12FLB250P',
-      '12FLB300P', '12FLB350P', '12FLB400P', '12FLB450P', '12FLB540P'
+      '12FLB100P','12FLB150P','12FLB200P','12FLB250P',
+      '12FLB300P','12FLB350P','12FLB400P','12FLB450P','12FLB540P'
     ];
-
-    // helper: คืน object สำหรับแต่ละรุ่น
     const buildFiammDetailMap = () => {
       const obj = {};
       FIAMM_MODELS.forEach(code => {
-        const key = `FIAMM ${code}`;
+        const key  = `FIAMM ${code}`;
         const img1 = `../assets/images/products/Battery%20FIAMM/fiamm-${code.toLowerCase()}.jpg`;
         obj[key] = {
           imgs: [img1],
           html: `
-            <p><strong>${key}</strong> แบตเตอรี่ตระกูล FLB จาก FIAMM สำหรับงานสำรองกำลังไฟ
-            (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM พร้อมอายุการใช้งานยาวนาน</p>
+            <p><strong>${key}</strong> แบตเตอรี่ตระกูล FLB จาก FIAMM สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center)</p>
             <ul>
               <li>ตระกูล: FLB Series (12V)</li>
               <li>รหัสรุ่น: ${code}</li>
@@ -136,17 +127,58 @@
     };
 
     const DETAIL_DATA = {
-      "Battery": {
-        "Battery FIAMM": buildFiammDetailMap(),  // <<— รายละเอียดรายรุ่น
-        "": {
-          "LI-THIUM BATTERY": {
+      // ===== UPS =====
+      "UPS": {
+        "EATON UPS": {
+          "EATON UPS": {
             imgs: ["../assets/images/products/placeholder.png"],
-            html: `<p><strong>LI-THIUM BATTERY</strong> ข้อมูลกำลังอัปเดต</p>`
+            html: `<p><strong>EATON UPS</strong> — ข้อมูลกำลังอัปเดต</p>`
+          }
+        },
+        "SCHNEIDER (APC)": {
+          "SCHNEIDER (APC)": {
+            imgs: ["../assets/images/products/placeholder.png"],
+            html: `<p><strong>Schneider (APC)</strong> — ข้อมูลกำลังอัปเดต</p>`
           }
         }
       },
-      "Battery BMS": {
-        "Batt Mon": {
+
+      // ===== Battery VRLA =====
+      "Battery VRLA": {
+        "FIAMM": buildFiammDetailMap(),
+        "VISION": {
+          "VISION VRLA": {
+            imgs: ["../assets/images/products/placeholder.png"],
+            html: `<p><strong>VISION VRLA</strong> ข้อมูลกำลังอัปเดต</p>`
+          }
+        },
+        "PKESS": {
+          "PKESS VRLA": {
+            imgs: ["../assets/images/products/placeholder.png"],
+            html: `<p><strong>PKESS VRLA</strong> ข้อมูลกำลังอัปเดต</p>`
+          }
+        },
+        "Sacred Sun": {
+          "Sacred Sun VRLA": {
+            imgs: ["../assets/images/products/placeholder.png"],
+            html: `<p><strong>Sacred Sun VRLA</strong> ข้อมูลกำลังอัปเดต</p>`
+          }
+        }
+      },
+
+      // ===== Battery Lithium =====
+      "Battery Lithium": {
+        "VISION": {
+          "VISION Lithium": {
+            imgs: ["../assets/images/products/placeholder.png"],
+            html: `<p><strong>VISION Lithium</strong> ข้อมูลกำลังอัปเดต</p>`
+          }
+        }
+      },
+
+      // ===== BMS (ไม่มี subcategory) =====
+      "BMS": {
+        "": {
           "Cell Watch Eaton": {
             imgs: [
               "../assets/images/products/Cellwatch.jpg",
@@ -161,11 +193,11 @@
               "../assets/images/products/eaton-cell-watch-09.png"
             ],
             html: `
-              <p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cell Watch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ internal resistance แบบ real-time พร้อมการแจ้งเตือน</p>
+              <p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cell Watch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ IR แบบเรียลไทม์</p>
               <ul>
-                <li>รองรับ multi-string</li>
+                <li>รองรับ Multi-string</li>
                 <li>Web dashboard / Alarm</li>
-                <li>รองรับการเชื่อมต่อ Modbus/TCP</li>
+                <li>Modbus/TCP</li>
               </ul>
             `
           },
@@ -180,11 +212,11 @@
               "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0006.jpg"
             ],
             html: `
-              <p><strong>Battery Monitoring system</strong> โซลูชันติดตามสถานะแบตเตอรี่แบบเรียลไทม์ ครอบคลุมแรงดัน, กระแส, อุณหภูมิ, IR พร้อมระบบแจ้งเตือนและรายงาน</p>
+              <p><strong>PBMS9000Pro</strong> ระบบติดตามสถานะแบตเตอรี่แบบเรียลไทม์ ครอบคลุมแรงดัน กระแส อุณหภูมิ และ IR</p>
               <ul>
                 <li>รองรับ Multi-String / Multi-Bank</li>
-                <li>Dashboard และ Alarm ผ่าน Web</li>
-                <li>รองรับ Modbus/TCP, Integration กับ SCADA/EMS</li>
+                <li>Dashboard & Alarm ผ่าน Web</li>
+                <li>Modbus/TCP, เชื่อม SCADA/EMS</li>
               </ul>
             `
           },
@@ -195,11 +227,11 @@
               "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0002.jpg"
             ],
             html: `
-              <p><strong>PKBMS</strong> โซลูชัน Battery Management System ที่ออกแบบโดย PK Engineering สำหรับงานอุตสาหกรรม</p>
+              <p><strong>PKBMS</strong> Battery Management System สำหรับงานอุตสาหกรรม</p>
               <ul>
                 <li>Cell/Pack monitoring</li>
                 <li>Safety cut-off & balancing</li>
-                <li>Integration ได้กับ SCADA/EMS</li>
+                <li>รองรับการเชื่อมต่อ SCADA/EMS</li>
               </ul>
             `
           }
@@ -213,11 +245,11 @@
       return bySub[name];
     }
 
-    const data = getDetailData(category, subcategory, detail);
-    const imgEl = document.getElementById('detail-image');
-    const titleEl = document.getElementById('detail-title');
+    const data      = getDetailData(category, subcategory, detail);
+    const imgEl     = document.getElementById('detail-image');
+    const titleEl   = document.getElementById('detail-title');
     const contentEl = document.getElementById('detail-content');
-    const imageRow = document.getElementById('image-row');
+    const imageRow  = document.getElementById('image-row');
 
     if (data) {
       titleEl.textContent = detail;
@@ -241,5 +273,4 @@
     }
   </script>
 </body>
-
 </html>
