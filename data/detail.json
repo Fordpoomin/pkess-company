@@ -1,0 +1,124 @@
+{
+  "UPS": {
+    "EATON UPS": {
+      "EATON UPS": {
+        "imgs": ["../assets/images/products/placeholder.png"],
+        "html": "<p><strong>EATON UPS</strong> — ข้อมูลกำลังอัปเดต</p>"
+      }
+    },
+    "SCHNEIDER (APC)": {
+      "SCHNEIDER (APC)": {
+        "imgs": ["../assets/images/products/placeholder.png"],
+        "html": "<p><strong>Schneider (APC)</strong> — ข้อมูลกำลังอัปเดต</p>"
+      }
+    }
+  },
+
+  "Battery VRLA": {
+    "FIAMM": {
+      "FIAMM 12FLB100P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb100p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB100P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB150P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb150p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB150P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB200P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb200p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB200P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB250P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb250p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB250P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB300P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb300p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB300P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB350P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb350p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB350P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB400P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb400p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB400P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB450P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb450p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB450P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      },
+      "FIAMM 12FLB540P": {
+        "imgs": ["../assets/images/products/Battery%20FIAMM/fiamm-12flb540p.jpg"],
+        "html": "<p><strong>FIAMM 12FLB540P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+      }
+    },
+    "VISION": {
+      "VISION VRLA": {
+        "imgs": ["../assets/images/products/placeholder.png"],
+        "html": "<p><strong>VISION VRLA</strong> ข้อมูลกำลังอัปเดต</p>"
+      }
+    },
+    "PKESS": {
+      "PKESS VRLA": {
+        "imgs": ["../assets/images/products/placeholder.png"],
+        "html": "<p><strong>PKESS VRLA</strong> ข้อมูลกำลังอัปเดต</p>"
+      }
+    },
+    "Sacred Sun": {
+      "Sacred Sun VRLA": {
+        "imgs": ["../assets/images/products/placeholder.png"],
+        "html": "<p><strong>Sacred Sun VRLA</strong> ข้อมูลกำลังอัปเดต</p>"
+      }
+    }
+  },
+
+  "Battery Lithium": {
+    "VISION": {
+      "VISION Lithium": {
+        "imgs": ["../assets/images/products/placeholder.png"],
+        "html": "<p><strong>VISION Lithium</strong> ข้อมูลกำลังอัปเดต</p>"
+      }
+    }
+  },
+
+  "BMS": {
+    "": {
+      "Cell Watch Eaton": {
+        "imgs": [
+          "../assets/images/products/Cellwatch.jpg",
+          "../assets/images/products/eaton-cell-watch-01.png",
+          "../assets/images/products/eaton-cell-watch-02.png",
+          "../assets/images/products/eaton-cell-watch-03.png",
+          "../assets/images/products/eaton-cell-watch-04.png",
+          "../assets/images/products/eaton-cell-watch-05.png",
+          "../assets/images/products/eaton-cell-watch-06.png",
+          "../assets/images/products/eaton-cell-watch-07.png",
+          "../assets/images/products/eaton-cell-watch-08.png",
+          "../assets/images/products/eaton-cell-watch-09.png"
+        ],
+        "html": "<p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cell Watch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ IR แบบเรียลไทม์ รองรับ Multi-string, Web dashboard/Alarm และ Modbus/TCP</p>"
+      },
+      "PBMS9000Pro": {
+        "imgs": [
+          "../assets/images/products/PBMS9000Pro.png",
+          "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0001.jpg",
+          "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0002.jpg",
+          "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0003.jpg",
+          "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0004.jpg",
+          "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0005.jpg",
+          "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0006.jpg"
+        ],
+        "html": "<p><strong>PBMS9000Pro</strong> ระบบติดตามสถานะแบตเตอรี่แบบเรียลไทม์ ครอบคลุมแรงดัน กระแส อุณหภูมิ และ IR รองรับ Multi-String/Multi-Bank และ Modbus/TCP</p>"
+      },
+      "PKBMS": {
+        "imgs": [
+          "../assets/images/products/PKBMS.png",
+          "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0001.jpg",
+          "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0002.jpg"
+        ],
+        "html": "<p><strong>PKBMS</strong> Battery Management System สำหรับงานอุตสาหกรรม: Cell/Pack monitoring, Safety cut-off & balancing, รองรับการเชื่อม SCADA/EMS</p>"
+      }
+    }
+  }
+}

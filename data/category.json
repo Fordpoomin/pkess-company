@@ -1,0 +1,119 @@
+{
+  "UPS": {
+    "EATON UPS": [
+      {
+        "title": "EATON UPS",
+        "img": "../assets/images/products/placeholder.png",
+        "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=EATON%20UPS"
+      }
+    ],
+    "SCHNEIDER (APC)": [
+      {
+        "title": "SCHNEIDER (APC)",
+        "img": "../assets/images/products/placeholder.png",
+        "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=SCHNEIDER%20(APC)"
+      }
+    ]
+  },
+
+  "Battery VRLA": {
+    "FIAMM": [
+      {
+        "title": "FIAMM 12FLB100P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb100p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB100P"
+      },
+      {
+        "title": "FIAMM 12FLB150P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb150p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB150P"
+      },
+      {
+        "title": "FIAMM 12FLB200P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb200p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB200P"
+      },
+      {
+        "title": "FIAMM 12FLB250P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb250p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB250P"
+      },
+      {
+        "title": "FIAMM 12FLB300P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb300p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB300P"
+      },
+      {
+        "title": "FIAMM 12FLB350P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb350p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB350P"
+      },
+      {
+        "title": "FIAMM 12FLB400P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb400p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB400P"
+      },
+      {
+        "title": "FIAMM 12FLB450P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb450p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB450P"
+      },
+      {
+        "title": "FIAMM 12FLB540P",
+        "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb540p.jpg",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB540P"
+      }
+    ],
+    "VISION": [
+      {
+        "title": "VISION VRLA",
+        "img": "../assets/images/products/placeholder.png",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=VISION%20VRLA"
+      }
+    ],
+    "PKESS": [
+      {
+        "title": "PKESS VRLA",
+        "img": "../assets/images/products/placeholder.png",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=PKESS%20VRLA"
+      }
+    ],
+    "Sacred Sun": [
+      {
+        "title": "Sacred Sun VRLA",
+        "img": "../assets/images/products/placeholder.png",
+        "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=Sacred%20Sun%20VRLA"
+      }
+    ]
+  },
+
+  "Battery Lithium": {
+    "VISION": [
+      {
+        "title": "VISION Lithium",
+        "img": "../assets/images/products/placeholder.png",
+        "link": "./detail.html?category=Battery%20Lithium&subcategory=VISION&detail=VISION%20Lithium"
+      }
+    ]
+  },
+
+  "BMS": {
+    "_items": [
+      {
+        "title": "Cell Watch Eaton",
+        "img": "../assets/images/products/Cellwatch.jpg",
+        "link": "./detail.html?category=BMS&detail=Cell%20Watch%20Eaton"
+      },
+      {
+        "title": "PKBMS",
+        "img": "../assets/images/products/PKBMS.png",
+        "link": "./detail.html?category=BMS&detail=PKBMS"
+      },
+      {
+        "title": "PBMS9000Pro",
+        "img": "../assets/images/products/PBMS9000Pro.png",
+        "link": "./detail.html?category=BMS&detail=PBMS9000Pro"
+      }
+    ]
+  }
+}
