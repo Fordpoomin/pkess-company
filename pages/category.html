@@ -7,9 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/styles.css" rel="stylesheet" />
+  <link href="../assets/css/loding.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Loader Overlay -->
+  <div id="page-loader">
+    <div class="loader-card">
+      <div class="spinner-border text-light" role="status" style="width: 3rem; height: 3rem;">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+
   <!-- Navbar -->
   <div id="navbar-placeholder"></div>
 
@@ -30,9 +40,25 @@
     </ol>
   </nav>
 
-  <!-- Grid ของรายการในหมวดย่อย -->
-  <div class="container my-4">
-    <div id="category-grid" class="row g-4"></div>
+  <!-- Content -->
+  <div class="container my-4 content">
+    <!-- รายการตรงของ Category -->
+    <div id="direct-items-section" class="mb-4" style="display:none;">
+      <h5 class="mb-3">Items</h5>
+      <div id="direct-items-grid" class="row g-4"></div>
+    </div>
+
+    <!-- หมวดย่อยของ Category -->
+    <div id="subcategory-section" class="mb-2" style="display:none;">
+      <h5 class="mb-3">Categories</h5>
+      <div id="category-grid" class="row g-4"></div>
+    </div>
+
+    <!-- รายการภายใน Subcategory -->
+    <div id="sub-items-section" class="mb-2" style="display:none;">
+      <h5 class="mb-3" id="sub-items-title"></h5>
+      <div id="sub-items-grid" class="row g-4"></div>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -40,43 +66,81 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/scripts.js"></script>
   <script>
     const q = new URLSearchParams(location.search);
     const category = decodeURIComponent(q.get('category') || '');
     const subcategory = decodeURIComponent(q.get('subcategory') || '');
 
+    // Navbar highlight
     $('#navbar-placeholder').load('../assets/components/navbar.html', function () {
       $(`#navbar-placeholder .dropdown-menu a:contains("${category}")`).first()
         .closest('.dropdown').find('> .nav-link').addClass('active text-warning fw-bold');
     });
     $('#footer-placeholder').load('../assets/components/footer.html');
 
-    // ✅ เงื่อนไข breadcrumb/hero
+    // Breadcrumb + Hero
     const bcCat = document.getElementById('bc-category');
     const bcSub = document.getElementById('bc-subcategory');
     const heroTitle = document.getElementById('hero-title');
     const heroSub = document.getElementById('hero-sub');
 
     if (subcategory) {
-      // มี subcategory: Home / Category / Subcategory
       heroTitle.textContent = subcategory;
       heroSub.textContent = category;
       bcCat.textContent = category || 'Category';
-      bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;   // ✅ กลับไปหน้า category
+      bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;
       bcSub.textContent = subcategory;
-      // (จะอยู่เป็น crumb สุดท้ายแบบ active อยู่แล้วใน HTML)
     } else {
-      // ไม่มี subcategory: Home / Category
       heroTitle.textContent = category || 'Category';
       heroSub.textContent = '';
       bcCat.textContent = category || 'Category';
-      bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;   // ✅ หน้าเดียวกัน
-      // ซ่อน crumb "Subcategory"
+      bcCat.href = `./category.html?category=${encodeURIComponent(category)}`;
       bcSub.parentElement.style.display = 'none';
     }
 
-    // ----- DATA (encode ให้ชัวร์) -----
+    // ---------- DATA ----------
+    // รายการรุ่น FIAMM (ตามชื่อไฟล์)
+    const FIAMM_MODELS = [
+      '12FLB100P', '12FLB150P', '12FLB200P', '12FLB250P',
+      '12FLB300P', '12FLB350P', '12FLB400P', '12FLB450P', '12FLB540P'
+    ];
+
+    // helper: สร้างรายการการ์ดจาก list รุ่น
+    const buildFiammItems = () => FIAMM_MODELS.map(code => {
+      const title = `FIAMM ${code}`;
+      const img = `../assets/images/products/Battery%20FIAMM/fiamm-${code.toLowerCase()}.jpg`;
+      const link =
+        `./detail.html?category=${encodeURIComponent('Battery')}` +
+        `&subcategory=${encodeURIComponent('Battery FIAMM')}` +
+        `&detail=${encodeURIComponent(title)}`;
+      return { title, img, link };
+    });
+
     const CATEGORY_DATA = {
+      "Battery": {
+        _items: [
+          {
+            title: "LI-THIUM BATTERY",
+            img: "../assets/images/products/placeholder.png",
+            link: `./detail.html?category=${encodeURIComponent('Battery')}&detail=${encodeURIComponent('LI-THIUM BATTERY')}`
+          }
+        ],
+        "Battery FIAMM": buildFiammItems(),   // <<— รายการรุ่นจากรูป
+        "SLA": [
+          {
+            title: "VISION BATTERY",
+            img: "../assets/images/products/placeholder.png",
+            link: `./detail.html?category=${encodeURIComponent('Battery')}&subcategory=${encodeURIComponent('SLA')}&detail=${encodeURIComponent('VISION BATTERY')}`
+          },
+          {
+            title: "FIAMM",
+            img: "../assets/images/products/placeholder.png",
+            link: `./detail.html?category=${encodeURIComponent('Battery')}&subcategory=${encodeURIComponent('SLA')}&detail=${encodeURIComponent('FIAMM')}`
+          }
+        ]
+      },
+
       "Battery BMS": {
         "Batt Mon": [
           {
@@ -98,20 +162,44 @@
       }
     };
 
-    const grid = document.getElementById('category-grid');
+    // ---------- Render ----------
+    const subGrid = document.getElementById('category-grid');
+    const directSection = document.getElementById('direct-items-section');
+    const directGrid = document.getElementById('direct-items-grid');
+    const subSection = document.getElementById('subcategory-section');
+    const subItemsSection = document.getElementById('sub-items-section');
+    const subItemsTitle = document.getElementById('sub-items-title');
+    const subItemsGrid = document.getElementById('sub-items-grid');
 
-    // ถ้าไม่มี subcategory -> แสดงการ์ด "Subcategory" (ในที่นี้มี Batt Mon เดียว)
+    const catData = CATEGORY_DATA[category] || {};
+
     if (!subcategory) {
-      const subs = CATEGORY_DATA[category] ? Object.keys(CATEGORY_DATA[category]) : [];
-      if (subs.length === 0) {
-        grid.innerHTML = '<p class="text-muted text-center">No items found in this category.</p>';
-      } else {
-        grid.innerHTML = subs.map(sub => {
-          const firstImg = (CATEGORY_DATA[category][sub][0] || {}).img || '../assets/images/products/placeholder.png';
+      // รายการตรง
+      const directItems = catData._items || [];
+      if (directItems.length > 0) {
+        directSection.style.display = '';
+        directGrid.innerHTML = directItems.map(it => `
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="${it.link}" class="text-decoration-none text-dark d-block h-100">
+              <div class="card-product">
+                <div class="thumb"><img src="${it.img}" alt="${it.title}"></div>
+                <div class="title"><span>${it.title}</span></div>
+              </div>
+            </a>
+          </div>
+        `).join('');
+      }
+
+      // หมวดย่อย
+      const subs = Object.keys(catData).filter(k => k !== '_items');
+      if (subs.length > 0) {
+        subSection.style.display = '';
+        subGrid.innerHTML = subs.map(sub => {
+          const firstImg = (catData[sub][0] || {}).img || '../assets/images/products/placeholder.png';
           return `
             <div class="col-6 col-md-4 col-lg-3">
               <a href="./category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(sub)}"
-                class="text-decoration-none text-dark d-block h-100">
+                 class="text-decoration-none text-dark d-block h-100">
                 <div class="card-product">
                   <div class="thumb"><img src="${firstImg}" alt="${sub}"></div>
                   <div class="title"><span>${sub}</span></div>
@@ -121,13 +209,20 @@
           `;
         }).join('');
       }
+
+      if (directItems.length === 0 && subs.length === 0) {
+        subGrid.innerHTML = '<p class="text-muted text-center">No items found in this category.</p>';
+        subSection.style.display = '';
+      }
     } else {
-      // มี subcategory -> แสดงรายการใน subcategory นั้น
-      const items = (CATEGORY_DATA[category] || {})[subcategory] || [];
+      // ภายในหมวดย่อย
+      const items = (catData[subcategory] || []);
+      subItemsSection.style.display = '';
+      subItemsTitle.textContent = subcategory;
       if (items.length === 0) {
-        grid.innerHTML = '<p class="text-muted text-center">No items found in this subcategory.</p>';
+        subItemsGrid.innerHTML = '<p class="text-muted text-center">No items found in this subcategory.</p>';
       } else {
-        grid.innerHTML = items.map(it => `
+        subItemsGrid.innerHTML = items.map(it => `
           <div class="col-6 col-md-4 col-lg-3">
             <a href="${it.link}" class="text-decoration-none text-dark d-block h-100">
               <div class="card-product">
@@ -140,7 +235,6 @@
       }
     }
   </script>
-
 </body>
 
 </html>
