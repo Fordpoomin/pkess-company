@@ -45,43 +45,57 @@
     const category = decodeURIComponent(q.get('category') || '');
     const subcategory = decodeURIComponent(q.get('subcategory') || '');
 
+    // Navbar highlight
     $('#navbar-placeholder').load('../assets/components/navbar.html', function () {
       $(`#navbar-placeholder .dropdown-menu a:contains("${category}")`).first()
         .closest('.dropdown').find('> .nav-link').addClass('active text-warning fw-bold');
     });
 
+    // Footer
     $('#footer-placeholder').load('../assets/components/footer.html');
 
+    // Hero + Breadcrumb
     document.getElementById('hero-title').textContent = subcategory || 'Category';
     document.getElementById('hero-sub').textContent = category || '';
     document.getElementById('bc-category').textContent = category || 'Category';
+    // ✅ ลิงก์ Category ต้องชี้ไปหน้า category.html
     document.getElementById('bc-category').href =
-      `./detail-category.html?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(subcategory)}`;
+      `./category.html?category=${encodeURIComponent(category)}`;
     document.getElementById('bc-subcategory').textContent = subcategory;
 
-    // ----- DATA (เพิ่ม Battery Monitoring system) -----
+    // ----- DATA -----
     const CATEGORY_DATA = {
-      "Battery": {
+      "Battery BMS": {
         "Batt Mon": [
           {
             title: "Cell Watch Eaton",
             img: "../assets/images/products/Cellwatch.jpg",
-            link: `./detail.html?category=Battery&subcategory=Batt%20Mon&detail=Cell%20Watch%20Eaton`
+            link:
+              `./detail.html?category=${encodeURIComponent('Battery BMS')}` +
+              `&subcategory=${encodeURIComponent('Batt Mon')}` +
+              `&detail=${encodeURIComponent('Cell Watch Eaton')}`
           },
           {
-            title: "Battery Monitoring system",
+            title: "PBMS9000Pro",
             img: "../assets/images/products/PBMS9000Pro.png",
-            link: `./detail.html?category=Battery&subcategory=Batt%20Mon&detail=Battery%20Monitoring%20system`
+            link:
+              `./detail.html?category=${encodeURIComponent('Battery BMS')}` +
+              `&subcategory=${encodeURIComponent('Batt Mon')}` +
+              `&detail=${encodeURIComponent('PBMS9000Pro')}`
           },
           {
             title: "PKBMS",
             img: "../assets/images/products/PKBMS.png",
-            link: `./detail.html?category=Battery&subcategory=Batt%20Mon&detail=PKBMS`
+            link:
+              `./detail.html?category=${encodeURIComponent('Battery BMS')}` +
+              `&subcategory=${encodeURIComponent('Batt Mon')}` +
+              `&detail=${encodeURIComponent('PKBMS')}`
           }
         ]
       }
     };
 
+    // Render cards
     const grid = document.getElementById('category-grid');
     const items = (CATEGORY_DATA[category] || {})[subcategory] || [];
 
@@ -105,5 +119,4 @@
     }
   </script>
 </body>
-
 </html>
