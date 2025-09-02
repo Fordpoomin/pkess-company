@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
 body {
     font-family: "Noto Sans Thai", sans-serif !important;
     background-color: #f8f9fa; /* Light background for better contrast */
@@ -124,23 +124,26 @@ ul.dropdown-menu.dropdown-submenu-2 {
     }
 }
 
-
 .footer-bg {
-  background-image: url('../images/footer-bg.jpg'); /* เปลี่ยนชื่อภาพตามไฟล์ของคุณ เช่น banner-footer.png */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+    background-image: url("../images/footer-bg.jpg"); /* เปลี่ยนชื่อภาพตามไฟล์ของคุณ เช่น banner-footer.png */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .footer-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* เงาดำบางๆ ซ้อน */
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 .footer-bg > .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-item a {
+    text-decoration: none !important;
 }
