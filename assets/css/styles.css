@@ -142,6 +142,7 @@ ul.dropdown-menu.dropdown-submenu-2 {
 @media (max-width: 768px) {
     .hero-banner {
         height: 200px;
+        min-height: 200px;
     }
 
     .hero-banner #page-title {
