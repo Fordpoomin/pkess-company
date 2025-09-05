@@ -19,7 +19,6 @@ body {
 /* เนื้อหา (ทั้งหมดก่อน footer) จะกินที่เท่าที่มีได้ปกติ */
 .content {
     margin-top: 100px; /* เว้นจาก navbar fixed-top 100px (มีอยู่แล้ว) */
-    padding-bottom: 40px;
 }
 
 /* ดัน footer ลงล่างสุดของหน้าจอเสมอ */
