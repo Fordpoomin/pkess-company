@@ -31,89 +31,115 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach((el) => io.observe(el));
 });
 
-// 3) ไฮไลต์เมนูตามพารามิเตอร์ (ทำงานหลัง navbar ถูก .load() แล้ว)
+// 3) ไฮไลต์เมนูตามพารามิเตอร์ (Desktop + Mobile)
 document.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(location.search);
-    const cat = params.get("category");
-    const sub = params.get("subcategory");
-    const det = params.get("detail");
-    const enc = (s) => (s ? encodeURIComponent(s) : null);
+  const params = new URLSearchParams(location.search);
+  const cat = params.get("category");
+  const sub = params.get("subcategory");
+  const det = params.get("detail");
 
-    function whenNavbarReady(cb) {
-        const host = document.getElementById("navbar-placeholder");
-        if (!host) return;
-        if (host.querySelector(".navbar")) return cb();
-        const mo = new MutationObserver(() => {
-            if (host.querySelector(".navbar")) {
-                mo.disconnect();
-                cb();
-            }
-        });
-        mo.observe(host, { childList: true, subtree: true });
+  const enc = (s) => (s ? encodeURIComponent(s) : null);
+
+  function whenNavbarReady(cb) {
+    const host = document.getElementById("navbar-placeholder");
+    if (!host) return;
+    if (host.querySelector(".navbar")) return cb();
+    const mo = new MutationObserver(() => {
+      if (host.querySelector(".navbar")) {
+        mo.disconnect();
+        cb();
+      }
+    });
+    mo.observe(host, { childList: true, subtree: true });
+  }
+
+  function clearAll(root) {
+    root.querySelectorAll(
+      ".dropdown-menu a, .offcanvas a.nav-link, .offcanvas a.dropdown-item"
+    ).forEach((el) => el.classList.remove("active", "fw-bold"));
+    // เคลียร์หัว "Product" (Desktop)
+    const prod = root.querySelector("#productDropdown");
+    prod?.classList.remove("active", "fw-bold");
+  }
+
+  function highlightAnchor(a, root) {
+    if (!a) return false;
+
+    clearAll(root);
+
+    // ไฮไลต์เฉพาะตัวที่ตรง (ใช้สีเหลือง/หนา)
+    a.classList.add("text-warning", "fw-bold");
+
+    // ดันหัว "Product" (เฉพาะ Desktop) ให้เป็น active + เหลือง
+    const topProduct =
+      a.closest(".dropdown")?.querySelector("#productDropdown") ||
+      root.querySelector("#productDropdown");
+    if (topProduct) topProduct.classList.add("active", "fw-bold");
+
+    return true;
+  }
+
+  function run() {
+    const root = document.getElementById("navbar-placeholder");
+    if (!root) return;
+
+    // จัดลำดับความจำเพาะของ selector (หาใน Desktop + Mobile พร้อมกัน)
+    const sel = [];
+    if (cat && sub) {
+      // 1) category + subcategory
+      sel.push(
+        `.navbar .dropdown-menu a[href*="category=${enc(cat)}"][href*="subcategory=${enc(sub)}"]`,
+        `.offcanvas a[href*="category=${enc(cat)}"][href*="subcategory=${enc(sub)}"]`
+      );
+    } else if (cat && det) {
+      // 2) category + detail
+      sel.push(
+        `.navbar .dropdown-menu a[href*="category=${enc(cat)}"][href*="detail=${enc(det)}"]`,
+        `.offcanvas a[href*="category=${enc(cat)}"][href*="detail=${enc(det)}"]`
+      );
+    } else if (cat) {
+      // 3) category อย่างเดียว (หัวข้อใหญ่)
+      sel.push(
+        // Desktop: เอาเฉพาะหัวข้อใหญ่ (dropdown-toggle) และตัด sub/detail ออก
+        `.navbar .dropdown-menu a.dropdown-item.dropdown-toggle[href*="category=${enc(cat)}"]:not([href*="subcategory="]):not([href*="detail="])`,
+        // Mobile: เอา link หัวข้อใหญ่เหมือนกัน (ไม่มี sub/detail)
+        `.offcanvas a[href*="category=${enc(cat)}"]:not([href*="subcategory="]):not([href*="detail="])`
+      );
+    } else {
+      // 4) Home (ไม่มี path หรือ index.html)
+      const p = location.pathname.replace(/\/+$/, "");
+      const isHome =
+        p === "" || p === "/" || /\/index(\.html)?$/.test(p);
+
+      if (isHome) {
+        clearAll(root);
+        // Desktop Home
+        const homeDesktop =
+          root.querySelector('.navbar .nav-link[href="../"]') ||
+          root.querySelector('.navbar .nav-link[href="/"]') ||
+          root.querySelector('.navbar .nav-link[href$="index.html"]');
+        homeDesktop?.classList.add("active", "fw-bold");
+
+        // Mobile Home
+        const homeMobile =
+          root.querySelector('.offcanvas .nav-link[href="../"]') ||
+          root.querySelector('.offcanvas .nav-link[href="/"]') ||
+          root.querySelector('.offcanvas .nav-link[href$="index.html"]');
+        homeMobile?.classList.add("active", "fw-bold");
+      }
+      return;
     }
 
-    function activateLink(a) {
-        if (!a) return;
-        // เคลียร์สภาวะเดิมในเมนูระดับเดียวกัน
-        a.closest(".dropdown-menu")
-            ?.querySelectorAll(".dropdown-item")
-            .forEach((el) => el.classList.remove("active"));
-
-        // ทำหัวข้อที่แมตช์ให้เหลือง/หนา (ห้ามใส่ .active เดี๋ยวถูก css สีอื่นทับ)
-        a.classList.add("active");
-
-        // ปุ่มบนสุด "Product" ให้ active + เหลือง + หนา
-        const top = a
-            .closest(".dropdown")
-            ?.querySelector(".nav-link.dropdown-toggle");
-        top?.classList.add("active", "text-warning", "fw-bold");
-
+    // ไล่เช็คตามลำดับจนเจออันแรกที่แมตช์
+    for (const s of sel) {
+      const a = root.querySelector(s);
+      if (highlightAnchor(a, root)) break;
     }
+  }
 
-    function run() {
-        const root = document.getElementById("navbar-placeholder");
-        if (!root) return;
-
-        let selector = null;
-
-        if (cat && sub) {
-            // หน้า category + subcategory -> ไฮไลต์รายการย่อยจริง ๆ เท่านั้น
-            selector = `.dropdown-menu a[href*="category=${enc(
-                cat
-            )}"][href*="subcategory=${enc(sub)}"]`;
-        } else if (cat && det) {
-            // หน้า category + detail -> ไฮไลต์รายการ detail เท่านั้น (เช่น BMS -> Cellwatch)
-            selector = `.dropdown-menu a[href*="category=${enc(
-                cat
-            )}"][href*="detail=${enc(det)}"]`;
-        } else if (cat) {
-            // หน้า category อย่างเดียว -> ไฮไลต์ "หัวข้อใหญ่" ทางซ้าย
-            // (ตัดลิงก์ที่เป็น sub/detail ออก และบังคับเป็นปุ่มหัวข้อด้วย .dropdown-toggle)
-            selector =
-                `.dropdown-menu a.dropdown-item.dropdown-toggle[href*="category=${enc(
-                    cat
-                )}"]` + `:not([href*="subcategory="]):not([href*="detail="])`;
-        } else {
-            // หน้า Home
-            if (
-                location.pathname.endsWith("/index.html") ||
-                location.pathname === "/" ||
-                location.pathname === ""
-            ) {
-                const home = root.querySelector(
-                    '.navbar-nav .nav-link[href$="index.html"]'
-                );
-                home?.classList.add("active", "text-warning", "fw-bold");
-            }
-            return;
-        }
-
-        const a = root.querySelector(selector);
-        activateLink(a);
-    }
-
-    whenNavbarReady(run);
+  whenNavbarReady(run);
 });
+
 
 // 4) Global <img> fallback: ถ้ารูปเสีย ให้ใช้ /assets/images/placeholder.png
 document.addEventListener("DOMContentLoaded", () => {
