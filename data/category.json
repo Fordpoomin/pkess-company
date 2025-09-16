@@ -217,25 +217,208 @@
         ],
         "VISION": [
             {
-                "title": "VISION VRLA",
+                "title": "CP1250",
+                "img": "../assets/images/products/Batt Vision/CP1250.avif",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP1250"
+            },
+            {
+                "title": "CP1272",
+                "img": "../assets/images/products/Batt Vision/CP1272.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP1272"
+            },
+            {
+                "title": "CP1290",
+                "img": "../assets/images/products/Batt Vision/CP1290.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP1290"
+            },
+            {
+                "title": "CP12170-X",
+                "img": "../assets/images/products/Batt Vision/CP12170-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP12170-X"
+            },
+            {
+                "title": "CP12260",
                 "img": "../assets/images/placeholder.png",
-                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=VISION%20VRLA"
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP12260"
+            },
+
+            {
+                "title": "6FM33-X",
+                "img": "../assets/images/products/Batt Vision/6FM33-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM33-X"
+            },
+            {
+                "title": "6FM40-X",
+                "img": "../assets/images/products/Batt Vision/6FM40-X.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM40-X"
+            },
+            {
+                "title": "6FM55-X",
+                "img": "../assets/images/products/Batt Vision/6fm55-x.webp",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM55-X"
+            },
+            {
+                "title": "6FM65-X",
+                "img": "../assets/images/products/Batt Vision/6FM65-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM65-X"
+            },
+            {
+                "title": "6FM75-X",
+                "img": "../assets/images/products/Batt Vision/6FM75-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM75-X"
+            },
+            {
+                "title": "6FM80-X",
+                "img": "../assets/images/products/Batt Vision/6FM80-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM80-X"
+            },
+            {
+                "title": "6FM100-X",
+                "img": "../assets/images/products/Batt Vision/6FM100-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM100-X"
+            },
+            {
+                "title": "6FM120-X",
+                "img": "../assets/images/products/Batt Vision/6FM120-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM120-X"
+            },
+            {
+                "title": "6FM134-X",
+                "img": "../assets/images/products/Batt Vision/6FM134-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM134-X"
+            },
+            {
+                "title": "6FM150-X",
+                "img": "../assets/images/products/Batt Vision/6FM150-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM150-X"
+            },
+            {
+                "title": "6FM180H-X",
+                "img": "../assets/images/placeholder.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM180H-X"
+            },
+            {
+                "title": "6FM200-X",
+                "img": "../assets/images/products/Batt Vision/6FM200-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM200-X"
+            },
+
+            {
+                "title": "HP12-30W",
+                "img": "../assets/images/placeholder.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=HP12-30W"
+            },
+            {
+                "title": "HP12-50W",
+                "img": "../assets/images/placeholder.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=HP12-50W"
             }
         ],
         "PKESS": [
             {
-                "title": "PKESS VRLA",
-                "img": "../assets/images/placeholder.png",
-                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=PKESS%20VRLA"
+                "title": "12V5Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V5Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V5Ah"
+            },
+            {
+                "title": "12V7Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V7.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V7Ah"
+            },
+            {
+                "title": "12V7.2Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V7.2.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V7.2Ah"
+            },
+            {
+                "title": "12V7.5Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V7.5.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V7.5Ah"
+            },
+            {
+                "title": "12V9Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V9.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V9Ah"
+            },
+            {
+                "title": "12V12Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V12.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V12Ah"
+            },
+            {
+                "title": "12V18Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V18Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V18Ah"
+            },
+            {
+                "title": "12V33Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V33Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V33Ah"
+            },
+            {
+                "title": "12V40Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V40Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V40Ah"
+            },
+            {
+                "title": "12V55Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V55Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V55Ah"
+            },
+            {
+                "title": "12V75Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V75Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V75Ah"
+            },
+            {
+                "title": "12V85Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V85Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V85Ah"
+            },
+            {
+                "title": "12V100Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V100Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V100Ah"
+            },
+            {
+                "title": "12V120Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V120Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V120Ah"
+            },
+            {
+                "title": "12V150Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V150Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V150Ah"
+            },
+            {
+                "title": "12V200Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V200Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V200Ah"
+            },
+            {
+                "title": "12V250Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V250Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V250Ah"
             }
         ],
-        "Sacred Sun": [
-            {
-                "title": "Sacred Sun VRLA",
-                "img": "../assets/images/placeholder.png",
-                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=Sacred%20Sun%20VRLA"
-            }
-        ]
+"Sacred Sun": [
+  { "title": "SP12-26(R)", "img": "../assets/images/products/Battery Sarcred Sun/SP12-26(R).png", "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-26%28R%29" },
+  { "title": "SP12-33",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-33.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-33" },
+  { "title": "SP12-38",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-38.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-38" },
+  { "title": "SP12-42",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-42.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-42" },
+  { "title": "SP12-50",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-50.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-50" },
+  { "title": "SP12-65",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-65.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-65" },
+  { "title": "SP12-80",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-80.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-80" },
+  { "title": "SP12-100",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-100.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-100" },
+  { "title": "SP12-120",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-120.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-120" },
+  { "title": "SP12-150",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-150.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-150" },
+  { "title": "SP12-200",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-200.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-200" },
+  { "title": "SP12-250",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-250.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-250" },
+  { "title": "SSP12-7",     "img": "../assets/images/products/Battery Sarcred Sun/SSP12-7.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-7" },
+  { "title": "SSP12-9HR",   "img": "../assets/images/products/Battery Sarcred Sun/SSP12-9HR.png",   "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-9HR" },
+  { "title": "SSP12-12",    "img": "../assets/images/products/Battery Sarcred Sun/SSP12-12.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-12" },
+  { "title": "SSP12-18",    "img": "../assets/images/products/Battery Sarcred Sun/SSP12-18.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-18" }
+] 
     },
 
     "Battery Lithium": {

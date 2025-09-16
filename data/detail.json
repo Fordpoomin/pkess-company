@@ -373,9 +373,159 @@
             }
         },
         "VISION": {
-            "VISION VRLA": {
-                "imgs": ["../assets/images/placeholder.png"],
-                "html": "<p><strong>VISION VRLA</strong> ข้อมูลกำลังอัปเดต</p>"
+            "CP1250": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP1250.avif",
+                    "../assets/images/products/Batt Vision/datasheets/01-CP1250/01-CP1250_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/01-CP1250/01-CP1250_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP1250</strong> – VRLA AGM สำหรับงานสำรองทั่วไป</p>"
+            },
+            "CP1272": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP1272.png",
+                    "../assets/images/products/Batt Vision/datasheets/02-CP1272/02-CP1272_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/02-CP1272/02-CP1272_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP1272</strong> – VRLA AGM 12V 7.2Ah</p>"
+            },
+            "CP1290": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP1290.png",
+                    "../assets/images/products/Batt Vision/datasheets/03-CP1290/03 CP1290_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/03-CP1290/03 CP1290_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP1290</strong> – VRLA AGM 12V 9Ah</p>"
+            },
+            "CP12170-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP12170-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/04-CP12170-X/04 CP12170-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/04-CP12170-X/04 CP12170-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP12170-X</strong> – VRLA AGM</p>"
+            },
+            "CP12260": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/05-CP12260/05 CP12260_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/05-CP12260/05 CP12260_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP12260</strong> – VRLA AGM</p>"
+            },
+
+            "6FM33-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM33-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/07-6FM33-X/07 6FM33-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/07-6FM33-X/07 6FM33-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM33-X</strong> – VRLA AGM</p>"
+            },
+            "6FM40-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM40-X.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/08-6FM40-X/08 6FM40-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/08-6FM40-X/08 6FM40-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM40-X</strong> – VRLA AGM</p>"
+            },
+            "6FM55-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6fm55-x.webp",
+                    "../assets/images/products/Batt Vision/datasheets/09-6FM55-X/09 6FM55-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/09-6FM55-X/09 6FM55-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM55-X</strong> – VRLA AGM</p>"
+            },
+            "6FM65-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM65-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/10-6FM65-X/10-6FM65-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/10-6FM65-X/10-6FM65-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM65-X</strong> – VRLA AGM</p>"
+            },
+            "6FM75-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/11-6FM75-X/11-6FM75-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/11-6FM75-X/11-6FM75-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM75-X</strong> – VRLA AGM</p>"
+            },
+            "6FM80-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM80-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/12-6FM80-X/12 6FM80-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/12-6FM80-X/12 6FM80-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM80-X</strong> – VRLA AGM</p>"
+            },
+            "6FM100-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM100-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/13-6FM100-X/13 6FM100-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/13-6FM100-X/13 6FM100-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM100-X</strong> – VRLA AGM</p>"
+            },
+            "6FM120-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/14-6FM120-X/14-6FM120-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/14-6FM120-X/14-6FM120-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM120-X</strong> – VRLA AGM</p>"
+            },
+            "6FM134-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM134-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/15-6FM134-X/15-6FM134-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/15-6FM134-X/15-6FM134-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM134-X</strong> – VRLA AGM</p>"
+            },
+            "6FM150-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/16-6FM150-X/16-6FM150-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/16-6FM150-X/16-6FM150-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM150-X</strong> – VRLA AGM</p>"
+            },
+            "6FM180H-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/17-6FM180H-X/17-6FM180H-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/17-6FM180H-X/17-6FM180H-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM180H-X</strong> – VRLA AGM</p>"
+            },
+            "6FM200-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM200-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/18-6FM200-X/18-6FM200-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/18-6FM200-X/18-6FM200-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM200-X</strong> – VRLA AGM</p>"
+            },
+
+            "HP12-30W": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/19-HP12-30W/19-HP12-30W_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/19-HP12-30W/19-HP12-30W_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION HP12-30W</strong> – High-Rate VRLA</p>"
+            },
+            "HP12-50W": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/20-HP12-50W/20-HP12-50W_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/20-HP12-50W/20-HP12-50W_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION HP12-50W</strong> – High-Rate VRLA</p>"
             }
         },
         "PKESS": {
@@ -385,9 +535,133 @@
             }
         },
         "Sacred Sun": {
-            "Sacred Sun VRLA": {
-                "imgs": ["../assets/images/placeholder.png"],
-                "html": "<p><strong>Sacred Sun VRLA</strong> ข้อมูลกำลังอัปเดต</p>"
+            "SP12-26(R)": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-26(R).png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-26R/SP12-26(R)_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-26R/SP12-26(R)_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-26(R)</strong> แบตเตอรี่ VRLA ซีรีส์ SP — ดูสเปกชีตในภาพด้านล่าง</p>"
+            },
+            "SP12-33": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-33.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-33/SP12-33_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-33/SP12-33_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-33</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-38": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-38.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-38/SP12-38_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-38/SP12-38_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-38</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-42": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-42.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-42/SP12-42_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-42/SP12-42_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-42</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-50": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-50.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-50/SP12-50_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-50/SP12-50_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-50</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-65": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-65.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-65/SP12-65_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-65/SP12-65_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-65</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-80": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-80.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-80/SP12-80_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-80/SP12-80_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-80</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-100": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-100.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-100/SP12-100_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-100/SP12-100_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-100</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-120": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-120.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-120/SP12-120_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-120/SP12-120_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-120</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-150": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-150.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-150/SP12-150_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-150/SP12-150_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-150</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-200": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-200.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-200/SP12-200_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-200/SP12-200_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-200</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-250": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-250.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-250/SP12-250_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-250/SP12-250_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-250</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-7": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-7.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-7/SSP12-7_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-7/SSP12-7_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-7</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-9HR": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-9HR.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-9HR/SSP12-9HR_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-9HR/SSP12-9HR_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-9HR</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-12": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-12.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-12/SSP12-12_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-12/SSP12-12_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-12</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-18": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-18.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-18/SSP12-18_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-18/SSP12-18_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-18</strong> VRLA — สเปกชีตแนบ</p>"
             }
         }
     },
