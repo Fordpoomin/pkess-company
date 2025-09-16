@@ -401,32 +401,101 @@
                 "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V250Ah"
             }
         ],
-"Sacred Sun": [
-  { "title": "SP12-26(R)", "img": "../assets/images/products/Battery Sarcred Sun/SP12-26(R).png", "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-26%28R%29" },
-  { "title": "SP12-33",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-33.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-33" },
-  { "title": "SP12-38",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-38.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-38" },
-  { "title": "SP12-42",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-42.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-42" },
-  { "title": "SP12-50",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-50.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-50" },
-  { "title": "SP12-65",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-65.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-65" },
-  { "title": "SP12-80",     "img": "../assets/images/products/Battery Sarcred Sun/SP12-80.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-80" },
-  { "title": "SP12-100",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-100.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-100" },
-  { "title": "SP12-120",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-120.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-120" },
-  { "title": "SP12-150",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-150.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-150" },
-  { "title": "SP12-200",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-200.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-200" },
-  { "title": "SP12-250",    "img": "../assets/images/products/Battery Sarcred Sun/SP12-250.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-250" },
-  { "title": "SSP12-7",     "img": "../assets/images/products/Battery Sarcred Sun/SSP12-7.png",     "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-7" },
-  { "title": "SSP12-9HR",   "img": "../assets/images/products/Battery Sarcred Sun/SSP12-9HR.png",   "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-9HR" },
-  { "title": "SSP12-12",    "img": "../assets/images/products/Battery Sarcred Sun/SSP12-12.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-12" },
-  { "title": "SSP12-18",    "img": "../assets/images/products/Battery Sarcred Sun/SSP12-18.png",    "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-18" }
-] 
+        "Sacred Sun": [
+            {
+                "title": "SP12-26(R)",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-26(R).png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-26%28R%29"
+            },
+            {
+                "title": "SP12-33",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-33.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-33"
+            },
+            {
+                "title": "SP12-38",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-38.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-38"
+            },
+            {
+                "title": "SP12-42",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-42.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-42"
+            },
+            {
+                "title": "SP12-50",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-50.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-50"
+            },
+            {
+                "title": "SP12-65",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-65.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-65"
+            },
+            {
+                "title": "SP12-80",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-80.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-80"
+            },
+            {
+                "title": "SP12-100",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-100.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-100"
+            },
+            {
+                "title": "SP12-120",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-120.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-120"
+            },
+            {
+                "title": "SP12-150",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-150.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-150"
+            },
+            {
+                "title": "SP12-200",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-200.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-200"
+            },
+            {
+                "title": "SP12-250",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-250.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-250"
+            },
+            {
+                "title": "SSP12-7",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-7.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-7"
+            },
+            {
+                "title": "SSP12-9HR",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-9HR.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-9HR"
+            },
+            {
+                "title": "SSP12-12",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-12.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-12"
+            },
+            {
+                "title": "SSP12-18",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-18.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-18"
+            }
+        ]
     },
 
     "Battery Lithium": {
         "VISION": [
             {
-                "title": "VISION Lithium",
-                "img": "../assets/images/placeholder.png",
-                "link": "./detail.html?category=Battery%20Lithium&subcategory=VISION&detail=VISION%20Lithium"
+                "title": "Revo-TP100 512V50Ah",
+                "img": "../assets/images/products/Batt Lithium/Vision/Revo-TP100512V50Ah.png",
+                "link": "./detail.html?category=Battery%20Lithium&subcategory=VISION&detail=Revo-TP100%20512V50Ah"
+            },
+            {
+                "title": "Revo-TP200 512V100Ah",
+                "img": "../assets/images/products/Batt Lithium/Vision/Revo-TP200512V100Ah.png",
+                "link": "./detail.html?category=Battery%20Lithium&subcategory=VISION&detail=Revo-TP200%20512V100Ah"
             }
         ]
     },

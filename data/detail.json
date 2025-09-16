@@ -668,9 +668,21 @@
 
     "Battery Lithium": {
         "VISION": {
-            "VISION Lithium": {
-                "imgs": ["../assets/images/placeholder.png"],
-                "html": "<p><strong>VISION Lithium</strong> ข้อมูลกำลังอัปเดต</p>"
+            "Revo-TP100 512V50Ah": {
+                "imgs": [
+                    "../assets/images/products/Batt Lithium/Vision/Revo-TP100512V50Ah.png",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP100512V50Ah/Revo-TP100512V50Ah_page-0001.jpg",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP100512V50Ah/Revo-TP100512V50Ah_page-0002.jpg"
+                ],
+                "html": "<p><strong>Revo-TP100 512V50Ah</strong> — โซลูชันลิเธียมแรงดัน 512V ความจุ 50Ah เหมาะกับงานพลังงานสำรอง/ESS (อ้างอิงตาม datasheet)</p>"
+            },
+            "Revo-TP200 512V100Ah": {
+                "imgs": [
+                    "../assets/images/products/Batt Lithium/Vision/Revo-TP200512V100Ah.png",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP200512V100Ah/Revo-TP200512V100Ah_page-0001.jpg",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP200512V100Ah/Revo-TP200512V100Ah_page-0002.jpg"
+                ],
+                "html": "<p><strong>Revo-TP200 512V100Ah</strong> — โซลูชันลิเธียมแรงดัน 512V ความจุ 100Ah สำหรับงานกำลังสูง/ระบบพลังงาน (อ้างอิงตาม datasheet)</p>"
             }
         }
     },
