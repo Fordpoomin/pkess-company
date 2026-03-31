@@ -134,6 +134,7 @@ function setupDesktopMenus() {
 
     const handleEnter = () => openMenu(root)
     const handleLeave = () => scheduleClose()
+    const handleFocus = () => openMenu(root)
     const handleClick = (event: Event) => {
       event.preventDefault()
       if (root.classList.contains('is-open')) {
@@ -145,13 +146,17 @@ function setupDesktopMenus() {
 
     trigger.addEventListener('mouseenter', handleEnter)
     panel.addEventListener('mouseenter', handleEnter)
+    trigger.addEventListener('focus', handleFocus)
     root.addEventListener('mouseleave', handleLeave)
-    trigger.addEventListener('click', handleClick)
+    if (trigger.tagName === 'BUTTON') {
+      trigger.addEventListener('click', handleClick)
+      removeFns.push(() => trigger.removeEventListener('click', handleClick))
+    }
 
     removeFns.push(() => trigger.removeEventListener('mouseenter', handleEnter))
     removeFns.push(() => panel.removeEventListener('mouseenter', handleEnter))
+    removeFns.push(() => trigger.removeEventListener('focus', handleFocus))
     removeFns.push(() => root.removeEventListener('mouseleave', handleLeave))
-    removeFns.push(() => trigger.removeEventListener('click', handleClick))
   })
 
   const handleDocumentClick = (event: Event) => {

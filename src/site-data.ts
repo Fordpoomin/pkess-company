@@ -65,6 +65,11 @@ export const serviceLinks: NavLink[] = [
   }
 ]
 
+export const menuGroupLinks: NavLink[] = [
+  { label: 'Product', href: '/products' },
+  { label: 'Service', href: '/services' }
+]
+
 export const primaryLinks: NavLink[] = [
   { label: 'Home', href: '/' },
   { label: 'Project', href: '/project' },

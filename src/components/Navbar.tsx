@@ -32,15 +32,16 @@ export function Navbar() {
             <a className={`nav-chip ${isCurrentLink('/') ? 'is-active' : ''}`} href="/">Home</a>
 
             <div className="nav-flyout" data-menu-root>
-              <button className="nav-chip nav-chip-button" type="button" data-menu-trigger="products" aria-expanded="false">
+              <a className={`nav-chip nav-chip-button ${isCurrentLink('/products') ? 'is-active' : ''}`} href="/products" data-menu-trigger="products" aria-expanded="false">
                 Product
                 <span className="nav-chip-glow"></span>
-              </button>
+              </a>
               <div className="menu-panel mega-panel" data-menu-panel="products">
                 <div className="panel-intro">
                   <span className="panel-eyebrow">Featured Product Lines</span>
-                  <h3>เลือกหมวดสินค้าได้เร็วขึ้น</h3>
-                  <p>รวมหมวดหลักและแบรนด์ยอดนิยมไว้ในเมนูเดียว เพื่อให้ค้นหาสินค้าได้ลื่นและดูทันสมัยขึ้น</p>
+                  <h3>Browse every product group</h3>
+                  <p>Open the product group page directly or jump into a category from the quick menu.</p>
+                  <a className="group-primary-link" href="/products">View all product groups</a>
                 </div>
                 <div className="mega-grid">
                   {productGroups.map((group) => (
@@ -62,11 +63,12 @@ export function Navbar() {
             </div>
 
             <div className="nav-flyout" data-menu-root>
-              <button className="nav-chip nav-chip-button" type="button" data-menu-trigger="services" aria-expanded="false">
+              <a className={`nav-chip nav-chip-button ${isCurrentLink('/services') ? 'is-active' : ''}`} href="/services" data-menu-trigger="services" aria-expanded="false">
                 Service
                 <span className="nav-chip-glow"></span>
-              </button>
+              </a>
               <div className="menu-panel service-panel" data-menu-panel="services">
+                <a className="group-primary-link" href="/services">View all service groups</a>
                 {serviceLinks.map((link) => (
                   <a className="service-link" href={link.href}>
                     <strong>{link.label}</strong>
@@ -101,6 +103,7 @@ export function Navbar() {
 
         <div className="mobile-nav-body">
           <a className="mobile-link" href="/">Home</a>
+          <a className="mobile-link" href="/products">Product</a>
 
           <details className="mobile-group" open>
             <summary>Product</summary>
@@ -118,6 +121,7 @@ export function Navbar() {
             </div>
           </details>
 
+          <a className="mobile-link" href="/services">Service</a>
           <details className="mobile-group">
             <summary>Service</summary>
             <div className="mobile-group-body">

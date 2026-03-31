@@ -4,6 +4,7 @@ import { CategoryPage } from './components/CategoryPage'
 import { ContactPage } from './components/ContactPage'
 import { DetailPage } from './components/DetailPage'
 import { Footer } from './components/Footer'
+import { GroupLandingPage } from './components/GroupLandingPage'
 import { HomePage } from './components/HomePage'
 import { Navbar } from './components/Navbar'
 
@@ -45,6 +46,10 @@ function renderCurrentPage(props: any) {
       return <HomePage />
     case '/category':
       return <CategoryPage category={route.query.category} subcategory={route.query.subcategory} categoryData={props.categoryData} />
+    case '/products':
+      return <GroupLandingPage type="products" />
+    case '/services':
+      return <GroupLandingPage type="services" />
     case '/detail':
     case '/project':
     case '/references':

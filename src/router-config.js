@@ -9,6 +9,14 @@ export const routes = {
     name: 'category',
     title: 'Category'
   },
+  '/products': {
+    name: 'products',
+    title: 'Product Groups'
+  },
+  '/services': {
+    name: 'services',
+    title: 'Service Groups'
+  },
   '/detail': {
     name: 'detail',
     title: 'Detail'
