@@ -478,7 +478,7 @@ body {
 
 .modern-home.content {
   margin-top: 0;
-  padding-top: calc(var(--nav-height) + 24px);
+  padding-top: var(--nav-height);
 }
 
 .hero-splash {
@@ -577,11 +577,9 @@ body {
 }
 
 .content-showcase {
-  /* max-width: 1360px; */
   margin: 0 auto;
-  /* padding: 0 16px 48px; */
+  padding-top: 0;
   display: grid;
-  /* gap: 18px; */
 }
 
 .showcase-frame {
@@ -826,7 +824,7 @@ body {
   }
 
   .modern-home.content {
-    padding-top: calc(var(--nav-height) + 20px);
+    padding-top: var(--nav-height);
   }
 
   .hero-copy,
