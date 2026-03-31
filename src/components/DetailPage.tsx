@@ -45,6 +45,10 @@ export function DetailPage(props: {
   const staticPage = contentPages[props.pathname as keyof typeof contentPages]
 
   if (staticPage) {
+    const staticCrumbs = props.pathname.startsWith('/service/')
+      ? [{ label: 'Home', href: '/' }, { label: 'Service', href: '/services' }, { label: staticPage.title, active: true }]
+      : [{ label: 'Home', href: '/' }, { label: staticPage.title, active: true }]
+
     return (
       <main className="content page-shell">
         <section className="hero-banner modern-page-hero">
@@ -53,7 +57,7 @@ export function DetailPage(props: {
             <p className="lead">{staticPage.subtitle}</p>
           </div>
         </section>
-        <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: staticPage.title, active: true }]} />
+        <Breadcrumb items={staticCrumbs} />
         <section className="container py-4 pb-5">
           <div className="rich-panel" dangerouslySetInnerHTML={staticPage.html}></div>
         </section>
@@ -67,12 +71,14 @@ export function DetailPage(props: {
   const crumbs = props.subcategory
     ? [
         { label: 'Home', href: '/' },
+        { label: 'Product', href: '/products' },
         { label: props.category || 'Category', href: buildCategoryHref(props.category) },
         { label: props.subcategory || 'Subcategory', href: buildCategoryHref(props.category, props.subcategory) },
         { label: props.detail || 'Detail', active: true }
       ]
     : [
         { label: 'Home', href: '/' },
+        { label: 'Product', href: '/products' },
         { label: props.category || 'Category', href: buildCategoryHref(props.category) },
         { label: props.detail || 'Detail', active: true }
       ]

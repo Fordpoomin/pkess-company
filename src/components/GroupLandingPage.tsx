@@ -27,11 +27,10 @@ export function GroupLandingPage(props: { type: 'products' | 'services' }) {
             {productGroups.map((group) => (
               <article className="rich-panel group-card">
                 <div className="section-head">
-                  <h5>{group.title}</h5>
+                  <a className="group-primary-link" href={group.href}>{group.title}</a>
                   <p>{group.accent}</p>
                 </div>
                 <div className="group-links">
-                  <a className="group-primary-link" href={group.href}>Open {group.title}</a>
                   {group.links.map((link) => (
                     <a className="group-sub-link" href={link.href}>
                       <strong>{link.label}</strong>
@@ -47,10 +46,9 @@ export function GroupLandingPage(props: { type: 'products' | 'services' }) {
             {serviceLinks.map((link) => (
               <article className="rich-panel group-card">
                 <div className="section-head">
-                  <h5>{link.label}</h5>
+                  <a className="group-primary-link" href={link.href}>{link.label}</a>
                   <p>{link.description}</p>
                 </div>
-                <a className="group-primary-link" href={link.href}>Open service page</a>
               </article>
             ))}
           </div>

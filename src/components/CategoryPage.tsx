@@ -56,11 +56,13 @@ export function CategoryPage(props: {
   const crumbs = subcategory
     ? [
         { label: 'Home', href: '/' },
+        { label: 'Product', href: '/products' },
         { label: category || 'Category', href: buildCategoryHref(category) },
         { label: subcategory || 'Subcategory', active: true }
       ]
     : [
         { label: 'Home', href: '/' },
+        { label: 'Product', href: '/products' },
         { label: category || 'Category', active: true }
       ]
 
