@@ -1,34 +1,60 @@
-// Router configuration - Define all routes
+import { normalizePath, toQueryRecord } from './url-utils'
+
 export const routes = {
   '/': {
     name: 'home',
-    path: 'index.html',
     title: 'PK Engineering Solution Service'
   },
   '/category': {
     name: 'category',
-    path: 'pages/category.html',
     title: 'Category'
-  },
-  '/contact': {
-    name: 'contact',
-    path: 'pages/contact_us.html',
-    title: 'Contact Us'
   },
   '/detail': {
     name: 'detail',
-    path: 'pages/detail.html',
-    title: 'Detail',
-    requiresQuery: ['id'] // Requires query parameter
+    title: 'Detail'
+  },
+  '/contact': {
+    name: 'contact',
+    title: 'Contact Us'
+  },
+  '/project': {
+    name: 'project',
+    title: 'Project'
+  },
+  '/references': {
+    name: 'references',
+    title: 'Site References'
+  },
+  '/service/sla-battery': {
+    name: 'service-sla',
+    title: 'For SLA Battery'
+  },
+  '/service/lithium-battery': {
+    name: 'service-lithium',
+    title: 'For Lithium Battery'
   }
 }
 
-// Get route by path
-export function getRoute(pathname) {
-  return routes[pathname] || routes['/']
+export function getRoute(pathname, search = '') {
+  const normalizedPath = normalizePath(pathname)
+  const query = toQueryRecord(search)
+  const titleAliases = {
+    'For SLA Battery': '/service/sla-battery',
+    'For Lithium Battery': '/service/lithium-battery',
+    Project: '/project',
+    'Site References': '/references',
+    'Contact Us': '/contact'
+  }
+  const aliasedPath = normalizedPath === '/detail' && query.title ? titleAliases[query.title] || normalizedPath : normalizedPath
+  const route = routes[aliasedPath] || routes['/']
+
+  return {
+    ...route,
+    path: aliasedPath,
+    query
+  }
 }
 
-// Get all route names
 export function getRouteNames() {
   return Object.keys(routes)
 }

@@ -1,0 +1,522 @@
+{
+    "UPS": {
+        "EATON UPS": [
+            {
+                "title": "5P 650-1550",
+                "img": "../assets/images/products/UPS/Eaton/5P 650-1550/5P 650-1550-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=5P%20650-1550"
+            },
+            {
+                "title": "Eaton 5A UPS",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 5A UPS/Eaton 5A UPS-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%205A%20UPS"
+            },
+            {
+                "title": "Eaton 5E UPS",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 5E UPS/Eaton 5E UPS-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%205E%20UPS"
+            },
+            {
+                "title": "Eaton 5PX Gen2 UPS",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 5PX Gen2 UPS/Eaton 5PX Gen2 UPS-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%205PX%20Gen2%20UPS"
+            },
+            {
+                "title": "Eaton 5S",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 5S/Eaton 5S UPS-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%205S"
+            },
+
+            {
+                "title": "Eaton 9A UPS Brochure",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9A UPS Brochure/Eaton 9A UPS Brochure-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209A%20UPS%20Brochure"
+            },
+            {
+                "title": "Eaton 9E Rack (1-3kVA)",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9E Rack (1-3kVA)/Eaton 9E Rack (1-3kVA)-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209E%20Rack%20%281-3kVA%29"
+            },
+            {
+                "title": "Eaton 9E UPS - PS153052EN",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9E UPS - PS153052EN/Eaton 9E UPS - PS153052EN-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209E%20UPS%20-%20PS153052EN"
+            },
+            {
+                "title": "Eaton 9E UPS 1 - 3kVA",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9E UPS 1 - 3kVA/Eaton 9E UPS 1 - 3kVA-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209E%20UPS%201%20-%203kVA"
+            },
+            {
+                "title": "Eaton 9E UPS 6-20kVA",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9E UPS 6-20kVA/Eaton 9E UPS 6-20kVA-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209E%20UPS%206-20kVA"
+            },
+
+            {
+                "title": "Eaton 9PX Gen2 UPS",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9PX Gen2 UPS/Eaton 9PX Gen2 UPS-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209PX%20Gen2%20UPS"
+            },
+            {
+                "title": "Eaton 9SX Marine (1000-3000VA)",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9SX Marine (1000-3000VA)/Eaton 9SX Marine (1000-3000VA)-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209SX%20Marine%20%281000-3000VA%29"
+            },
+
+            {
+                "title": "Eaton 93E UPS 100-400 kVA",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 93E UPS 100-400 kVA/Eaton 93E UPS 100-400 kVA-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%2093E%20UPS%20100-400%20kVA"
+            },
+            {
+                "title": "Eaton 93E XL UPS 10-40kVa Brochure",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 93E XL UPS 10-40kVa Brochure/Eaton 93E XL UPS 10-40kVa Brochure-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%2093E%20XL%20UPS%2010-40kVa%20Brochure"
+            },
+
+            {
+                "title": "Eaton 93PR (25-200kW) UPS Brochure",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%2093PR%20%2825-200kW%29%20UPS%20Brochure"
+            },
+            {
+                "title": "Eaton 93PR (300-1200kW) UPS Brochure",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%2093PR%20%28300-1200kW%29%20UPS%20Brochure"
+            },
+
+            {
+                "title": "Eaton 93T UPS",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 93T UPS/Eaton 93T UPS-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%2093T%20UPS"
+            },
+            {
+                "title": "Eaton 9395XR UPS Brochure",
+                "img": "../assets/images/products/UPS/Eaton/Eaton 9395XR UPS Brochure/Eaton 9395XR UPS Brochure-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%209395XR%20UPS%20Brochure"
+            },
+            {
+                "title": "Eaton Variable Module Management System",
+                "img": "../assets/images/products/UPS/Eaton/Eaton Variable Module Management System/Eaton Variable Module Management System-01.jpg",
+                "link": "./detail.html?category=UPS&subcategory=EATON%20UPS&detail=Eaton%20Variable%20Module%20Management%20System"
+            }
+        ],
+
+        "SCHNEIDER (APC)": [
+            {
+                "title": "Galaxy-VS GVSUPS10KB2HS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB2HS/Galaxy-VS_GVSUPS10KB2HS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS10KB2HS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS10KB4HS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB4HS/Galaxy-VS_GVSUPS10KB4HS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS10KB4HS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS15KB4HS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS15KB4HS/Galaxy-VS_GVSUPS15KB4HS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS15KB4HS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS20KB4HS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KB4HS/Galaxy-VS_GVSUPS20KB4HS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS20KB4HS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS20KHS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS20KHS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS30K0B4HS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS30K0B4HS/Galaxy-VS_GVSUPS30K0B4HS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS30K0B4HS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS40K0B4HS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS40K0B4HS/Galaxy-VS_GVSUPS40K0B4HS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS40K0B4HS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS80KHS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS80KHS/Galaxy-VS_GVSUPS80KHS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS80KHS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS100KB5HS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS100KB5HS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS100KHS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KHS/Galaxy-VS_GVSUPS100KHS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS100KHS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS150KHS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KHS/Galaxy-VS_GVSUPS150KHS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS150KHS"
+            },
+            {
+                "title": "Galaxy-VS GVSUPS150KMHS",
+                "img": "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS_page-0001.jpg",
+                "link": "./detail.html?category=UPS&subcategory=SCHNEIDER%20(APC)&detail=Galaxy-VS%20GVSUPS150KMHS"
+            }
+        ]
+    },
+
+    "Battery VRLA": {
+        "FIAMM": [
+            {
+                "title": "FIAMM 12FLB100P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb100p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB100P"
+            },
+            {
+                "title": "FIAMM 12FLB150P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb150p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB150P"
+            },
+            {
+                "title": "FIAMM 12FLB200P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb200p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB200P"
+            },
+            {
+                "title": "FIAMM 12FLB250P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb250p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB250P"
+            },
+            {
+                "title": "FIAMM 12FLB300P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb300p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB300P"
+            },
+            {
+                "title": "FIAMM 12FLB350P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb350p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB350P"
+            },
+            {
+                "title": "FIAMM 12FLB400P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb400p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB400P"
+            },
+            {
+                "title": "FIAMM 12FLB450P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb450p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB450P"
+            },
+            {
+                "title": "FIAMM 12FLB540P",
+                "img": "../assets/images/products/Battery%20FIAMM/fiamm-12flb540p.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=FIAMM&detail=FIAMM%2012FLB540P"
+            }
+        ],
+        "VISION": [
+            {
+                "title": "CP1250",
+                "img": "../assets/images/products/Batt Vision/CP1250.avif",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP1250"
+            },
+            {
+                "title": "CP1272",
+                "img": "../assets/images/products/Batt Vision/CP1272.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP1272"
+            },
+            {
+                "title": "CP1290",
+                "img": "../assets/images/products/Batt Vision/CP1290.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP1290"
+            },
+            {
+                "title": "CP12170-X",
+                "img": "../assets/images/products/Batt Vision/CP12170-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP12170-X"
+            },
+            {
+                "title": "CP12260",
+                "img": "../assets/images/placeholder.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=CP12260"
+            },
+
+            {
+                "title": "6FM33-X",
+                "img": "../assets/images/products/Batt Vision/6FM33-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM33-X"
+            },
+            {
+                "title": "6FM40-X",
+                "img": "../assets/images/products/Batt Vision/6FM40-X.jpg",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM40-X"
+            },
+            {
+                "title": "6FM55-X",
+                "img": "../assets/images/products/Batt Vision/6fm55-x.webp",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM55-X"
+            },
+            {
+                "title": "6FM65-X",
+                "img": "../assets/images/products/Batt Vision/6FM65-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM65-X"
+            },
+            {
+                "title": "6FM75-X",
+                "img": "../assets/images/products/Batt Vision/6FM75-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM75-X"
+            },
+            {
+                "title": "6FM80-X",
+                "img": "../assets/images/products/Batt Vision/6FM80-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM80-X"
+            },
+            {
+                "title": "6FM100-X",
+                "img": "../assets/images/products/Batt Vision/6FM100-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM100-X"
+            },
+            {
+                "title": "6FM120-X",
+                "img": "../assets/images/products/Batt Vision/6FM120-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM120-X"
+            },
+            {
+                "title": "6FM134-X",
+                "img": "../assets/images/products/Batt Vision/6FM134-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM134-X"
+            },
+            {
+                "title": "6FM150-X",
+                "img": "../assets/images/products/Batt Vision/6FM150-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM150-X"
+            },
+            {
+                "title": "6FM180H-X",
+                "img": "../assets/images/placeholder.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM180H-X"
+            },
+            {
+                "title": "6FM200-X",
+                "img": "../assets/images/products/Batt Vision/6FM200-X.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=6FM200-X"
+            },
+
+            {
+                "title": "HP12-30W",
+                "img": "../assets/images/placeholder.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=HP12-30W"
+            },
+            {
+                "title": "HP12-50W",
+                "img": "../assets/images/placeholder.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=VISION&detail=HP12-50W"
+            }
+        ],
+        "PKESS": [
+            {
+                "title": "12V5Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V5Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V5Ah"
+            },
+            {
+                "title": "12V7Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V7.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V7Ah"
+            },
+            {
+                "title": "12V7.2Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V7.2.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V7.2Ah"
+            },
+            {
+                "title": "12V7.5Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V7.5.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V7.5Ah"
+            },
+            {
+                "title": "12V9Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V9.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V9Ah"
+            },
+            {
+                "title": "12V12Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V12.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V12Ah"
+            },
+            {
+                "title": "12V18Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V18Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V18Ah"
+            },
+            {
+                "title": "12V33Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V33Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V33Ah"
+            },
+            {
+                "title": "12V40Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V40Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V40Ah"
+            },
+            {
+                "title": "12V55Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V55Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V55Ah"
+            },
+            {
+                "title": "12V75Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V75Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V75Ah"
+            },
+            {
+                "title": "12V85Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V85Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V85Ah"
+            },
+            {
+                "title": "12V100Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V100Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V100Ah"
+            },
+            {
+                "title": "12V120Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V120Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V120Ah"
+            },
+            {
+                "title": "12V150Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V150Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V150Ah"
+            },
+            {
+                "title": "12V200Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V200Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V200Ah"
+            },
+            {
+                "title": "12V250Ah",
+                "img": "../assets/images/products/Battery PKESS/แบตเตอรี่-12V250Ah.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=PKESS&detail=12V250Ah"
+            }
+        ],
+        "Sacred Sun": [
+            {
+                "title": "SP12-26(R)",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-26(R).png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-26%28R%29"
+            },
+            {
+                "title": "SP12-33",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-33.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-33"
+            },
+            {
+                "title": "SP12-38",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-38.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-38"
+            },
+            {
+                "title": "SP12-42",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-42.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-42"
+            },
+            {
+                "title": "SP12-50",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-50.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-50"
+            },
+            {
+                "title": "SP12-65",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-65.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-65"
+            },
+            {
+                "title": "SP12-80",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-80.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-80"
+            },
+            {
+                "title": "SP12-100",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-100.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-100"
+            },
+            {
+                "title": "SP12-120",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-120.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-120"
+            },
+            {
+                "title": "SP12-150",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-150.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-150"
+            },
+            {
+                "title": "SP12-200",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-200.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-200"
+            },
+            {
+                "title": "SP12-250",
+                "img": "../assets/images/products/Battery Sarcred Sun/SP12-250.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SP12-250"
+            },
+            {
+                "title": "SSP12-7",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-7.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-7"
+            },
+            {
+                "title": "SSP12-9HR",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-9HR.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-9HR"
+            },
+            {
+                "title": "SSP12-12",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-12.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-12"
+            },
+            {
+                "title": "SSP12-18",
+                "img": "../assets/images/products/Battery Sarcred Sun/SSP12-18.png",
+                "link": "./detail.html?category=Battery%20VRLA&subcategory=Sacred%20Sun&detail=SSP12-18"
+            }
+        ]
+    },
+
+    "Battery Lithium": {
+        "VISION": [
+            {
+                "title": "Revo-TP100 512V50Ah",
+                "img": "../assets/images/products/Batt Lithium/Vision/Revo-TP100512V50Ah.png",
+                "link": "./detail.html?category=Battery%20Lithium&subcategory=VISION&detail=Revo-TP100%20512V50Ah"
+            },
+            {
+                "title": "Revo-TP200 512V100Ah",
+                "img": "../assets/images/products/Batt Lithium/Vision/Revo-TP200512V100Ah.png",
+                "link": "./detail.html?category=Battery%20Lithium&subcategory=VISION&detail=Revo-TP200%20512V100Ah"
+            }
+        ]
+    },
+
+    "BMS": {
+        "_items": [
+            {
+                "title": "Cellwatch Eaton",
+                "img": "../assets/images/products/Cellwatch.jpg",
+                "link": "./detail.html?category=BMS&detail=Cellwatch%20Eaton"
+            },
+            {
+                "title": "PKBMS",
+                "img": "../assets/images/products/PKBMS.png",
+                "link": "./detail.html?category=BMS&detail=PKBMS"
+            },
+            {
+                "title": "PBMS9000Pro",
+                "img": "../assets/images/products/PBMS9000Pro.png",
+                "link": "./detail.html?category=BMS&detail=PBMS9000Pro"
+            }
+        ]
+    }
+}

@@ -1,176 +1,86 @@
-// Router module - Handle page navigation and dynamic loading
+// Router module - Handle client-side navigation with clean URLs
 import { routes, getRoute } from './router-config.js'
+import { normalizePath } from './url-utils'
 
 class Router {
   constructor() {
     this.currentRoute = null
-    this.contentContainer = null
-    this.isLoading = false
+    this.initialized = false
   }
 
-  async init(containerId = 'page-content') {
-    this.contentContainer = document.getElementById(containerId)
-    if (!this.contentContainer) {
-      console.warn(`Container #${containerId} not found`)
-      return
+  init() {
+    if (!this.initialized) {
+      window.addEventListener('popstate', () => this.navigate(window.location.pathname + window.location.search))
+      document.addEventListener('click', (event) => this.handleDocumentClick(event))
+      this.initialized = true
     }
 
-    // Listen for navigation events
-    window.addEventListener('popstate', () => this.navigate(window.location.pathname))
-    
-    // Handle link clicks
-    document.addEventListener('click', (e) => {
-      const link = e.target.closest('a')
-      if (link && link.dataset.route) {
-        e.preventDefault()
-        this.push(link.dataset.route)
-      }
-    })
+    const normalized = normalizePath(window.location.pathname)
+    const resolvedRoute = getRoute(normalized, window.location.search)
+    const initialTarget = this.buildPath(resolvedRoute)
+    if (initialTarget !== `${window.location.pathname}${window.location.search}`) {
+      window.history.replaceState({}, '', `${initialTarget}${window.location.hash}`)
+    }
 
-    // Initial load
-    const route = getRoute(window.location.pathname)
-    this.currentRoute = route
-    document.title = route.title
-    
-    // Trigger page-loaded event for home page
-    window.dispatchEvent(new CustomEvent('page-loaded', { detail: route }))
+    this.navigate(window.location.pathname + window.location.search, { replace: true })
   }
 
-  async navigate(pathname) {
-    const route = getRoute(pathname)
-    
-    if (this.currentRoute?.path === route.path) {
-      return // Already on this route
-    }
+  handleDocumentClick(event) {
+    const target = event.target
+    if (!(target instanceof Element)) return
 
-    // Special case: home page is already loaded in DOM
-    if (pathname === '/' && this.contentContainer.innerHTML.trim() !== '') {
-      this.currentRoute = route
-      document.title = route.title
-      window.dispatchEvent(new CustomEvent('page-loaded', { detail: route }))
-      return
-    }
+    const link = target.closest('a')
+    if (!link) return
+    if (link.target === '_blank' || link.hasAttribute('download')) return
 
-    if (this.isLoading) {
-      return // Already loading
-    }
+    const href = link.getAttribute('href')
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return
 
-    this.isLoading = true
-    this.showLoader()
+    const url = new URL(href, window.location.origin)
+    if (url.origin !== window.location.origin) return
 
-    try {
-      await this.loadPage(route)
-      this.currentRoute = route
-      document.title = route.title
-    } catch (error) {
-      console.error('Navigation error:', error)
-      this.showError(`Failed to load ${route.title}`)
-    } finally {
-      this.isLoading = false
-      this.hideLoader()
-    }
-  }
+    const normalizedPath = normalizePath(url.pathname)
+    const route = getRoute(normalizedPath, url.search)
+    if (!routes[route.path] && route.path !== '/detail' && route.path !== '/category') return
 
-  async loadPage(route) {
-    try {
-      const response = await fetch(`/${route.path}`)
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`)
-      }
-
-      const html = await response.text()
-      
-      // Extract body content or specific container
-      const parser = new DOMParser()
-      const doc = parser.parseFromString(html, 'text/html')
-      
-      // Try to find main content - look for common selectors
-      let content = doc.querySelector('.content') ||
-                    doc.querySelector('main') ||
-                    doc.querySelector('[role="main"]') ||
-                    doc.body
-      
-      // If we found a specific container, use it
-      if (content && content !== doc.body) {
-        this.contentContainer.innerHTML = content.innerHTML
-      } else {
-        // Otherwise extract content between navbar and footer
-        const navbar = doc.getElementById('navbar-placeholder')
-        const footer = doc.querySelector('footer')
-        
-        let startIdx = 0
-        let endIdx = doc.body.children.length
-        
-        if (navbar) {
-          startIdx = Array.from(doc.body.children).indexOf(navbar) + 1
-        }
-        if (footer) {
-          endIdx = Array.from(doc.body.children).indexOf(footer)
-        }
-        
-        let contentHtml = ''
-        for (let i = startIdx; i < endIdx; i++) {
-          contentHtml += doc.body.children[i].outerHTML
-        }
-        
-        this.contentContainer.innerHTML = contentHtml || doc.body.innerHTML
-      }
-
-      // Execute scripts in the loaded content
-      this.executeScripts(this.contentContainer)
-      
-      // Dispatch custom event for page load
-      window.dispatchEvent(new CustomEvent('page-loaded', { detail: route }))
-    } catch (error) {
-      throw error
-    }
-  }
-
-  executeScripts(container) {
-    const scripts = container.querySelectorAll('script')
-    scripts.forEach(script => {
-      const newScript = document.createElement('script')
-      newScript.textContent = script.textContent
-      newScript.type = script.type
-      if (script.src) {
-        newScript.src = script.src
-      }
-      container.appendChild(newScript)
-    })
+    event.preventDefault()
+    this.push(`${this.buildPath(route)}${url.hash}`)
   }
 
   push(pathname) {
-    window.history.pushState({}, '', pathname)
-    this.navigate(pathname)
+    const nextPath = pathname || '/'
+    window.history.pushState({}, '', nextPath)
+    this.navigate(nextPath)
   }
 
-  showLoader() {
-    const loader = document.getElementById('page-loader')
-    if (loader) {
-      loader.style.display = 'flex'
+  navigate(pathWithSearch, options = {}) {
+    const [pathname, search = ''] = pathWithSearch.split('?')
+    const query = search ? `?${search}` : window.location.search
+    const route = getRoute(pathname, query)
+    const routeKey = `${route.path}${JSON.stringify(route.query)}`
+    const currentKey = this.currentRoute ? `${this.currentRoute.path}${JSON.stringify(this.currentRoute.query)}` : null
+
+    if (routeKey === currentKey && !options.replace) {
+      return
     }
+
+    this.currentRoute = route
+    document.title = route.title
+    window.dispatchEvent(new CustomEvent('page-loaded', { detail: route }))
   }
 
-  hideLoader() {
-    const loader = document.getElementById('page-loader')
-    if (loader) {
-      setTimeout(() => {
-        loader.style.display = 'none'
-      }, 300)
-    }
+  buildPath(route) {
+    const hasQuery = route.path === '/category' || route.path === '/detail'
+    if (!hasQuery) return route.path
+
+    const params = new URLSearchParams()
+    Object.entries(route.query || {}).forEach(([key, value]) => {
+      if (value) params.set(key, value)
+    })
+    const query = params.toString()
+    return query ? `${route.path}?${query}` : route.path
   }
 
-  showError(message) {
-    const errorHtml = `
-      <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Error:</strong> ${message}
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-      </div>
-    `
-    this.contentContainer.innerHTML = errorHtml
-  }
-
-  // Get current route info
   getCurrentRoute() {
     return this.currentRoute
   }
