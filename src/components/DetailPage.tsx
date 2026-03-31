@@ -3,6 +3,7 @@ import { h } from '../tsx-runtime'
 import { contentPages } from '../content-data'
 import { Breadcrumb } from './Breadcrumb'
 import { buildCategoryHref } from '../url-utils'
+import { normalizeLegacyHref } from '../url-utils'
 
 type DetailEntry = {
   imgs?: string[]
@@ -13,7 +14,19 @@ type DetailData = Record<string, Record<string, Record<string, DetailEntry>>>
 
 function normalizeAssetPath(src?: string) {
   if (!src) return '/assets/images/placeholder.png'
-  return src.replace(/^\.\.\//, '/')
+  return normalizeLegacyHref(src).replace(/^\/detail/, '/assets').replace(/^\/category/, '/assets')
+}
+
+function resolveDetailImages(images?: string[]) {
+  const normalizedImages = (images || []).map(normalizeAssetPath)
+  const filteredImages = normalizedImages.filter((src, index) => {
+    if (index === 0 && /-main\.(jpg|jpeg|png|webp|avif)$/i.test(src) && normalizedImages.length > 1) {
+      return false
+    }
+    return true
+  })
+
+  return filteredImages.length ? filteredImages : ['/assets/images/placeholder.png']
 }
 
 function getDetailData(detailData: DetailData, category: string, subcategory: string, detail: string) {
@@ -49,7 +62,7 @@ export function DetailPage(props: {
   }
 
   const data = getDetailData(props.detailData, props.category, props.subcategory, props.detail)
-  const images = data?.imgs?.map(normalizeAssetPath) || ['/assets/images/placeholder.png']
+  const images = resolveDetailImages(data?.imgs)
   const html = data?.html || '<p class="text-muted">Coming soon...</p>'
   const crumbs = props.subcategory
     ? [
