@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
+body {
+    font-family: "Noto Sans Thai", sans-serif !important;
+    background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+/* ===== Sticky Footer (ชิดล่างเสมอ) ===== */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh; /* ให้ยืดเต็ม viewport */
+    display: flex; /* ใช้ flex layout แนวตั้ง */
+    flex-direction: column;
+}
+
+/* เนื้อหา (ทั้งหมดก่อน footer) จะกินที่เท่าที่มีได้ปกติ */
+.content {
+    margin-top: 100px; /* เว้นจาก navbar fixed-top 100px (มีอยู่แล้ว) */
+}
+
+/* ดัน footer ลงล่างสุดของหน้าจอเสมอ */
+#footer-placeholder {
+    margin-top: auto;
+}
+
+/* เผื่อบางหน้าคุณใช้ <footer id="footer-placeholder"> */
+footer#footer-placeholder {
+    margin-top: auto;
+}
+
+.navbar {
+    font-family: "Noto Sans Thai", sans-serif !important;
+}
+
+#page-title {
+    padding-top: 30px;
+}
+
+/* Dropdown submenu support with animation */
+.dropdown-submenu {
+    position: relative;
+}
+.navbar-nav .dropdown-menu {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    display: block;
+    pointer-events: none;
+}
+
+.dropdown-menu {
+    background: #ffffff;
+}
+
+.dropdown-item {
+    color: #000000;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+    z-index: 999;
+}
+
+/* ไฮไลต์เมนูที่ active */
+.dropdown-menu .dropdown-item.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: rgba(139, 198, 62, 1) ; /* สีเหลือง */
+    font-weight: bold;
+}
+
+nav.navbar {
+    background: #2e3092;
+    background: linear-gradient(
+        90deg,
+        rgba(46, 48, 146, 1) 0%,
+        rgba(139, 198, 62, 1) 100%
+    );
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    height: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-collapse {
+        display: none !important;
+    }
+}
+
+.navbar-nav .nav-link.active {
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    color: #ffc107 !important; /* สีเหลือง */
+    font-weight: bold;
+}
+
+ul.dropdown-menu.dropdown-submenu-2 {
+    top: 32px;
+    left: 32px;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* ปรับตามต้องการ */
+    min-height: 300px;
+    background-image: url("../images/banner-1.jpg"); /* ✅ ใช้ภาพของคุณ */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* เงาดำ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner #page-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 200px;
+        min-height: 200px;
+    }
+
+    .hero-banner #page-title {
+        font-size: 2rem;
+    }
+}
+
+.footer-bg {
+    background-image: url("../images/footer-bg.jpg"); /* เปลี่ยนชื่อภาพตามไฟล์ของคุณ เช่น banner-footer.png */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.footer-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.footer-bg > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-item a {
+    text-decoration: none !important;
+}
+/* Product grid card */
+.card-product {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    background: #fff;
+}
+
+.card-product:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* ภาพอยู่กึ่งกลางและสัดส่วนพอดี */
+.card-product .thumb {
+    height: 200px; /* ปรับความสูงรูปที่ต้องการ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 12px;
+}
+@media (min-width: 992px) {
+    .card-product .thumb {
+        height: 220px;
+    }
+}
+.card-product .thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* โชว์ทั้งรูป ไม่ครอป */
+}
+
+/* ชื่อชิดล่างเสมอ */
+.card-product .title {
+    margin-top: auto; /* ดันลงล่างสุดของการ์ด */
+    border-top: 1px solid #eef0f2;
+    padding: 12px 14px;
+    text-align: center;
+    font-weight: 600;
+    color: #0f172a;
+    min-height: 56px; /* ความสูงขั้นต่ำให้ 2 บรรทัดพอดี */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

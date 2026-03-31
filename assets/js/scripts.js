@@ -7,8 +7,10 @@ window.addEventListener("load", () => {
 });
 
 // 2) Reveal Animation: เฟดขึ้นเมื่อใกล้เข้าหน้าจอ + ไล่ดีเลย์ทีละนิด
-document.addEventListener("DOMContentLoaded", () => {
+function initRevealAnimation() {
     const items = Array.from(document.querySelectorAll(".reveal"));
+
+    if (items.length === 0) return; // ไม่มี reveal elements
 
     // กำหนด delay ไล่ลำดับ (60ms ต่อชิ้น)
     items.forEach((el, idx) =>
@@ -29,7 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     items.forEach((el) => io.observe(el));
-});
+}
+
+// Trigger reveal animation after DOM is ready
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initRevealAnimation);
+} else {
+    initRevealAnimation();
+}
+
+// Re-trigger when page content changes (dynamic loading)
+window.addEventListener("page-loaded", initRevealAnimation);
 
 // 3) ไฮไลต์เมนูตามพารามิเตอร์ (Desktop + Mobile)
 document.addEventListener("DOMContentLoaded", () => {
