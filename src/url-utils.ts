@@ -6,10 +6,14 @@ export function normalizePath(pathname: string) {
   switch (cleanPath) {
     case '/index.html':
       return '/'
+    case '/category.html':
     case '/pages/category.html':
       return '/category'
+    case '/detail.html':
     case '/pages/detail.html':
       return '/detail'
+    case '/contact.html':
+    case '/contact_us.html':
     case '/pages/contact_us.html':
       return '/contact'
     default:
