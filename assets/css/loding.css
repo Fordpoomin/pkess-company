@@ -30,13 +30,14 @@ body.loaded #page-loader {
 
 /* ---------- Reveal animation (สำหรับคอนเทนต์) ---------- */
 .reveal {
-    opacity: 0;
-    transform: translateY(16px);
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition-delay: var(--delay, 0ms);
 }
 .reveal.show {
     opacity: 1;
     transform: none;
-    transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .reveal[data-delay] {
     transition-delay: var(--delay, 0ms);

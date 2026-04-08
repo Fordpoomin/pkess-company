@@ -1,0 +1,729 @@
+{
+    "UPS": {
+        "EATON UPS": {
+            "5P 650-1550": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/5P 650-1550/5P 650-1550-main.jpg",
+                    "../assets/images/products/UPS/Eaton/5P 650-1550/5P 650-1550-01.jpg",
+                    "../assets/images/products/UPS/Eaton/5P 650-1550/5P 650-1550-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 5P 650–1550</strong> – Line-Interactive UPS</p>"
+            },
+            "Eaton 5A UPS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 5A UPS/Eaton 5A UPS-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5A UPS/Eaton 5A UPS-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5A UPS/Eaton 5A UPS-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 5A UPS</strong> – UPS สำหรับงานสำนักงาน</p>"
+            },
+            "Eaton 5E UPS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 5E UPS/Eaton 5E UPS-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5E UPS/Eaton 5E UPS-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5E UPS/Eaton 5E UPS-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 5E UPS</strong> – Line-Interactive UPS สำหรับ SOHO/SMB</p>"
+            },
+            "Eaton 5PX Gen2 UPS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 5PX Gen2 UPS/Eaton 5PX Gen2 UPS-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5PX Gen2 UPS/Eaton 5PX Gen2 UPS-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5PX Gen2 UPS/Eaton 5PX Gen2 UPS-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 5PX Gen2</strong> – ประสิทธิภาพสูง พร้อมวัดพลังงานรายอุปกรณ์</p>"
+            },
+            "Eaton 5S": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 5S/Eaton 5S UPS-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5S/Eaton 5S UPS-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 5S/Eaton 5S UPS-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 5S</strong> – UPS สำหรับอุปกรณ์สำนักงาน/PoS</p>"
+            },
+
+            "Eaton 9A UPS Brochure": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9A UPS Brochure/Eaton 9A UPS Brochure-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9A UPS Brochure/Eaton 9A UPS Brochure-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9A UPS Brochure/Eaton 9A UPS Brochure-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 9A UPS</strong> – โบรชัวร์</p>"
+            },
+            "Eaton 9E Rack (1-3kVA)": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9E Rack (1-3kVA)/Eaton 9E Rack (1-3kVA)-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E Rack (1-3kVA)/Eaton 9E Rack (1-3kVA)-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E Rack (1-3kVA)/Eaton 9E Rack (1-3kVA)-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 9E Rack (1–3kVA)</strong></p>"
+            },
+            "Eaton 9E UPS - PS153052EN": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS - PS153052EN/Eaton 9E UPS - PS153052EN-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS - PS153052EN/Eaton 9E UPS - PS153052EN-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS - PS153052EN/Eaton 9E UPS - PS153052EN-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 9E UPS – PS153052EN</strong></p>"
+            },
+            "Eaton 9E UPS 1 - 3kVA": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS 1 - 3kVA/Eaton 9E UPS 1 - 3kVA-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS 1 - 3kVA/Eaton 9E UPS 1 - 3kVA-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS 1 - 3kVA/Eaton 9E UPS 1 - 3kVA-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 9E UPS 1–3kVA</strong></p>"
+            },
+            "Eaton 9E UPS 6-20kVA": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS 6-20kVA/Eaton 9E UPS 6-20kVA-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS 6-20kVA/Eaton 9E UPS 6-20kVA-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9E UPS 6-20kVA/Eaton 9E UPS 6-20kVA-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 9E UPS 6–20kVA</strong></p>"
+            },
+
+            "Eaton 9PX Gen2 UPS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9PX Gen2 UPS/Eaton 9PX Gen2 UPS-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9PX Gen2 UPS/Eaton 9PX Gen2 UPS-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9PX Gen2 UPS/Eaton 9PX Gen2 UPS-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 9PX Gen2 UPS</strong></p>"
+            },
+            "Eaton 9SX Marine (1000-3000VA)": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9SX Marine (1000-3000VA)/Eaton 9SX Marine (1000-3000VA)-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9SX Marine (1000-3000VA)/Eaton 9SX Marine (1000-3000VA)-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9SX Marine (1000-3000VA)/Eaton 9SX Marine (1000-3000VA)-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 9SX Marine (1000–3000VA)</strong></p>"
+            },
+
+            "Eaton 93E UPS 100-400 kVA": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 93E UPS 100-400 kVA/Eaton 93E UPS 100-400 kVA-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93E UPS 100-400 kVA/Eaton 93E UPS 100-400 kVA-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93E UPS 100-400 kVA/Eaton 93E UPS 100-400 kVA-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 93E UPS 100–400 kVA</strong></p>"
+            },
+            "Eaton 93E XL UPS 10-40kVa Brochure": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 93E XL UPS 10-40kVa Brochure/Eaton 93E XL UPS 10-40kVa Brochure-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93E XL UPS 10-40kVa Brochure/Eaton 93E XL UPS 10-40kVa Brochure-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93E XL UPS 10-40kVa Brochure/Eaton 93E XL UPS 10-40kVa Brochure-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 93E XL UPS 10–40kVA</strong> – โบรชัวร์</p>"
+            },
+
+            "Eaton 93PR (25-200kW) UPS Brochure": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-02.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-03.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-04.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-05.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-06.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-07.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (25-200kW) UPS Brochure/Eaton 93PR (25-200kW) UPS Brochure-08.jpg"
+                ],
+                "html": "<p><strong>Eaton 93PR (25–200kW)</strong> – โบรชัวร์</p>"
+            },
+            "Eaton 93PR (300-1200kW) UPS Brochure": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-02.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-03.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-04.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-05.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-06.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-07.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93PR (300-1200kW) UPS Brochure/Eaton 93PR (300-1200kW) UPS Brochure-08.jpg"
+                ],
+                "html": "<p><strong>Eaton 93PR (300–1200kW)</strong> – โบรชัวร์</p>"
+            },
+
+            "Eaton 93T UPS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 93T UPS/Eaton 93T UPS-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93T UPS/Eaton 93T UPS-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 93T UPS/Eaton 93T UPS-02.jpg"
+                ],
+                "html": "<p><strong>Eaton 93T UPS</strong></p>"
+            },
+            "Eaton 9395XR UPS Brochure": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton 9395XR UPS Brochure/Eaton 9395XR UPS Brochure-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9395XR UPS Brochure/Eaton 9395XR UPS Brochure-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9395XR UPS Brochure/Eaton 9395XR UPS Brochure-02.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9395XR UPS Brochure/Eaton 9395XR UPS Brochure-03.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9395XR UPS Brochure/Eaton 9395XR UPS Brochure-04.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton 9395XR UPS Brochure/Eaton 9395XR UPS Brochure-05.jpg"
+                ],
+                "html": "<p><strong>Eaton 9395XR UPS</strong> – โบรชัวร์</p>"
+            },
+            "Eaton Variable Module Management System": {
+                "imgs": [
+                    "../assets/images/products/UPS/Eaton/Eaton Variable Module Management System/Eaton Variable Module Management System-main.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton Variable Module Management System/Eaton Variable Module Management System-01.jpg",
+                    "../assets/images/products/UPS/Eaton/Eaton Variable Module Management System/Eaton Variable Module Management System-02.jpg"
+                ],
+                "html": "<p><strong>Eaton Variable Module Management System</strong></p>"
+            }
+        },
+
+        "SCHNEIDER (APC)": {
+            "Galaxy-VS GVSUPS10KB2HS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB2HS/Galaxy-VS_GVSUPS10KB2HS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB2HS/Galaxy-VS_GVSUPS10KB2HS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB2HS/Galaxy-VS_GVSUPS10KB2HS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB2HS/Galaxy-VS_GVSUPS10KB2HS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB2HS/Galaxy-VS_GVSUPS10KB2HS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB2HS/Galaxy-VS_GVSUPS10KB2HS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS10KB2HS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS10KB4HS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB4HS/Galaxy-VS_GVSUPS10KB4HS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB4HS/Galaxy-VS_GVSUPS10KB4HS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB4HS/Galaxy-VS_GVSUPS10KB4HS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB4HS/Galaxy-VS_GVSUPS10KB4HS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB4HS/Galaxy-VS_GVSUPS10KB4HS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS10KB4HS/Galaxy-VS_GVSUPS10KB4HS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS10KB4HS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS15KB4HS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS15KB4HS/Galaxy-VS_GVSUPS15KB4HS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS15KB4HS/Galaxy-VS_GVSUPS15KB4HS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS15KB4HS/Galaxy-VS_GVSUPS15KB4HS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS15KB4HS/Galaxy-VS_GVSUPS15KB4HS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS15KB4HS/Galaxy-VS_GVSUPS15KB4HS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS15KB4HS/Galaxy-VS_GVSUPS15KB4HS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS15KB4HS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS20KB4HS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KB4HS/Galaxy-VS_GVSUPS20KB4HS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KB4HS/Galaxy-VS_GVSUPS20KB4HS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KB4HS/Galaxy-VS_GVSUPS20KB4HS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KB4HS/Galaxy-VS_GVSUPS20KB4HS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KB4HS/Galaxy-VS_GVSUPS20KB4HS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KB4HS/Galaxy-VS_GVSUPS20KB4HS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS20KB4HS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS20KHS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0005.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0006.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS20KHS/Galaxy-VS_GVSUPS20KHS_page-0007.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS20KHS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS30K0B4HS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS30K0B4HS/Galaxy-VS_GVSUPS30K0B4HS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS30K0B4HS/Galaxy-VS_GVSUPS30K0B4HS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS30K0B4HS/Galaxy-VS_GVSUPS30K0B4HS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS30K0B4HS/Galaxy-VS_GVSUPS30K0B4HS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS30K0B4HS/Galaxy-VS_GVSUPS30K0B4HS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS30K0B4HS/Galaxy-VS_GVSUPS30K0B4HS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS30K0B4HS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS40K0B4HS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS40K0B4HS/Galaxy-VS_GVSUPS40K0B4HS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS40K0B4HS/Galaxy-VS_GVSUPS40K0B4HS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS40K0B4HS/Galaxy-VS_GVSUPS40K0B4HS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS40K0B4HS/Galaxy-VS_GVSUPS40K0B4HS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS40K0B4HS/Galaxy-VS_GVSUPS40K0B4HS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS40K0B4HS/Galaxy-VS_GVSUPS40K0B4HS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS40K0B4HS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS80KHS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS80KHS/Galaxy-VS_GVSUPS80KHS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS80KHS/Galaxy-VS_GVSUPS80KHS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS80KHS/Galaxy-VS_GVSUPS80KHS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS80KHS/Galaxy-VS_GVSUPS80KHS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS80KHS/Galaxy-VS_GVSUPS80KHS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS80KHS/Galaxy-VS_GVSUPS80KHS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS80KHS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS100KB5HS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS_page-0005.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KB5HS/Galaxy-VS_GVSUPS100KB5HS_page-0006.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS100KB5HS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS100KHS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KHS/Galaxy-VS_GVSUPS100KHS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KHS/Galaxy-VS_GVSUPS100KHS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KHS/Galaxy-VS_GVSUPS100KHS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KHS/Galaxy-VS_GVSUPS100KHS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KHS/Galaxy-VS_GVSUPS100KHS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS100KHS/Galaxy-VS_GVSUPS100KHS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS100KHS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS150KHS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KHS/Galaxy-VS_GVSUPS150KHS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KHS/Galaxy-VS_GVSUPS150KHS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KHS/Galaxy-VS_GVSUPS150KHS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KHS/Galaxy-VS_GVSUPS150KHS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KHS/Galaxy-VS_GVSUPS150KHS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KHS/Galaxy-VS_GVSUPS150KHS_page-0005.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS150KHS</strong> – ข้อมูลโบรชัวร์</p>"
+            },
+            "Galaxy-VS GVSUPS150KMHS": {
+                "imgs": [
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS-main.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS_page-0001.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS_page-0002.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS_page-0003.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS_page-0004.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS_page-0005.jpg",
+                    "../assets/images/products/UPS/Schneider/Galaxy-VS_GVSUPS150KMHS/Galaxy-VS_GVSUPS150KMHS_page-0006.jpg"
+                ],
+                "html": "<p><strong>Galaxy VS GVSUPS150KMHS</strong> – ข้อมูลโบรชัวร์</p>"
+            }
+        }
+    },
+
+    "Battery VRLA": {
+        "FIAMM": {
+            "FIAMM 12FLB100P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb100p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB100P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB150P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb150p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB150P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB200P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb200p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB200P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB250P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb250p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB250P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB300P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb300p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB300P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB350P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb350p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB350P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB400P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb400p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB400P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB450P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb450p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB450P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            },
+            "FIAMM 12FLB540P": {
+                "imgs": [
+                    "../assets/images/products/Battery%20FIAMM/fiamm-12flb540p.jpg"
+                ],
+                "html": "<p><strong>FIAMM 12FLB540P</strong> แบตเตอรี่ตระกูล FLB สำหรับงานสำรองกำลังไฟ (UPS/Telecom/Data Center) โครงสร้าง VRLA AGM</p>"
+            }
+        },
+        "VISION": {
+            "CP1250": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP1250.avif",
+                    "../assets/images/products/Batt Vision/datasheets/01-CP1250/01-CP1250_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/01-CP1250/01-CP1250_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP1250</strong> – VRLA AGM สำหรับงานสำรองทั่วไป</p>"
+            },
+            "CP1272": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP1272.png",
+                    "../assets/images/products/Batt Vision/datasheets/02-CP1272/02-CP1272_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/02-CP1272/02-CP1272_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP1272</strong> – VRLA AGM 12V 7.2Ah</p>"
+            },
+            "CP1290": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP1290.png",
+                    "../assets/images/products/Batt Vision/datasheets/03-CP1290/03 CP1290_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/03-CP1290/03 CP1290_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP1290</strong> – VRLA AGM 12V 9Ah</p>"
+            },
+            "CP12170-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/CP12170-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/04-CP12170-X/04 CP12170-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/04-CP12170-X/04 CP12170-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP12170-X</strong> – VRLA AGM</p>"
+            },
+            "CP12260": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/05-CP12260/05 CP12260_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/05-CP12260/05 CP12260_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION CP12260</strong> – VRLA AGM</p>"
+            },
+
+            "6FM33-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM33-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/07-6FM33-X/07 6FM33-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/07-6FM33-X/07 6FM33-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM33-X</strong> – VRLA AGM</p>"
+            },
+            "6FM40-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM40-X.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/08-6FM40-X/08 6FM40-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/08-6FM40-X/08 6FM40-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM40-X</strong> – VRLA AGM</p>"
+            },
+            "6FM55-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6fm55-x.webp",
+                    "../assets/images/products/Batt Vision/datasheets/09-6FM55-X/09 6FM55-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/09-6FM55-X/09 6FM55-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM55-X</strong> – VRLA AGM</p>"
+            },
+            "6FM65-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM65-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/10-6FM65-X/10-6FM65-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/10-6FM65-X/10-6FM65-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM65-X</strong> – VRLA AGM</p>"
+            },
+            "6FM75-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/11-6FM75-X/11-6FM75-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/11-6FM75-X/11-6FM75-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM75-X</strong> – VRLA AGM</p>"
+            },
+            "6FM80-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM80-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/12-6FM80-X/12 6FM80-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/12-6FM80-X/12 6FM80-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM80-X</strong> – VRLA AGM</p>"
+            },
+            "6FM100-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM100-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/13-6FM100-X/13 6FM100-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/13-6FM100-X/13 6FM100-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM100-X</strong> – VRLA AGM</p>"
+            },
+            "6FM120-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/14-6FM120-X/14-6FM120-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/14-6FM120-X/14-6FM120-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM120-X</strong> – VRLA AGM</p>"
+            },
+            "6FM134-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM134-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/15-6FM134-X/15-6FM134-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/15-6FM134-X/15-6FM134-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM134-X</strong> – VRLA AGM</p>"
+            },
+            "6FM150-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/16-6FM150-X/16-6FM150-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/16-6FM150-X/16-6FM150-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM150-X</strong> – VRLA AGM</p>"
+            },
+            "6FM180H-X": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/17-6FM180H-X/17-6FM180H-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/17-6FM180H-X/17-6FM180H-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM180H-X</strong> – VRLA AGM</p>"
+            },
+            "6FM200-X": {
+                "imgs": [
+                    "../assets/images/products/Batt Vision/6FM200-X.png",
+                    "../assets/images/products/Batt Vision/datasheets/18-6FM200-X/18-6FM200-X_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/18-6FM200-X/18-6FM200-X_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION 6FM200-X</strong> – VRLA AGM</p>"
+            },
+
+            "HP12-30W": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/19-HP12-30W/19-HP12-30W_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/19-HP12-30W/19-HP12-30W_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION HP12-30W</strong> – High-Rate VRLA</p>"
+            },
+            "HP12-50W": {
+                "imgs": [
+                    "../assets/images/placeholder.png",
+                    "../assets/images/products/Batt Vision/datasheets/20-HP12-50W/20-HP12-50W_page-0001.jpg",
+                    "../assets/images/products/Batt Vision/datasheets/20-HP12-50W/20-HP12-50W_page-0002.jpg"
+                ],
+                "html": "<p><strong>VISION HP12-50W</strong> – High-Rate VRLA</p>"
+            }
+        },
+        "PKESS": {
+            "PKESS VRLA": {
+                "imgs": ["../assets/images/placeholder.png"],
+                "html": "<p><strong>PKESS VRLA</strong> ข้อมูลกำลังอัปเดต</p>"
+            }
+        },
+        "Sacred Sun": {
+            "SP12-26(R)": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-26(R).png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-26R/SP12-26(R)_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-26R/SP12-26(R)_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-26(R)</strong> แบตเตอรี่ VRLA ซีรีส์ SP — ดูสเปกชีตในภาพด้านล่าง</p>"
+            },
+            "SP12-33": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-33.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-33/SP12-33_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-33/SP12-33_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-33</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-38": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-38.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-38/SP12-38_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-38/SP12-38_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-38</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-42": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-42.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-42/SP12-42_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-42/SP12-42_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-42</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-50": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-50.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-50/SP12-50_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-50/SP12-50_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-50</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-65": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-65.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-65/SP12-65_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-65/SP12-65_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-65</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-80": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-80.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-80/SP12-80_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-80/SP12-80_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-80</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-100": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-100.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-100/SP12-100_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-100/SP12-100_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-100</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-120": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-120.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-120/SP12-120_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-120/SP12-120_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-120</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-150": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-150.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-150/SP12-150_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-150/SP12-150_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-150</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-200": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-200.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-200/SP12-200_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-200/SP12-200_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-200</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SP12-250": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SP12-250.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-250/SP12-250_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SP12-250/SP12-250_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SP12-250</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-7": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-7.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-7/SSP12-7_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-7/SSP12-7_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-7</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-9HR": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-9HR.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-9HR/SSP12-9HR_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-9HR/SSP12-9HR_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-9HR</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-12": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-12.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-12/SSP12-12_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-12/SSP12-12_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-12</strong> VRLA — สเปกชีตแนบ</p>"
+            },
+            "SSP12-18": {
+                "imgs": [
+                    "../assets/images/products/Battery Sarcred Sun/SSP12-18.png",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-18/SSP12-18_page-0001.jpg",
+                    "../assets/images/products/Battery Sarcred Sun/datasheets/SSP12-18/SSP12-18_page-0002.jpg"
+                ],
+                "html": "<p><strong>Sacred Sun SSP12-18</strong> VRLA — สเปกชีตแนบ</p>"
+            }
+        }
+    },
+
+    "Battery Lithium": {
+        "VISION": {
+            "Revo-TP100 512V50Ah": {
+                "imgs": [
+                    "../assets/images/products/Batt Lithium/Vision/Revo-TP100512V50Ah.png",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP100512V50Ah/Revo-TP100512V50Ah_page-0001.jpg",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP100512V50Ah/Revo-TP100512V50Ah_page-0002.jpg"
+                ],
+                "html": "<p><strong>Revo-TP100 512V50Ah</strong> — โซลูชันลิเธียมแรงดัน 512V ความจุ 50Ah เหมาะกับงานพลังงานสำรอง/ESS (อ้างอิงตาม datasheet)</p>"
+            },
+            "Revo-TP200 512V100Ah": {
+                "imgs": [
+                    "../assets/images/products/Batt Lithium/Vision/Revo-TP200512V100Ah.png",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP200512V100Ah/Revo-TP200512V100Ah_page-0001.jpg",
+                    "../assets/images/products/Batt Lithium/Vision/datasheets/Revo-TP200512V100Ah/Revo-TP200512V100Ah_page-0002.jpg"
+                ],
+                "html": "<p><strong>Revo-TP200 512V100Ah</strong> — โซลูชันลิเธียมแรงดัน 512V ความจุ 100Ah สำหรับงานกำลังสูง/ระบบพลังงาน (อ้างอิงตาม datasheet)</p>"
+            }
+        }
+    },
+
+    "BMS": {
+        "": {
+            "Cellwatch Eaton": {
+                "imgs": [
+                    "../assets/images/products/Cellwatch.jpg",
+                    "../assets/images/products/eaton-cell-watch-01.png",
+                    "../assets/images/products/eaton-cell-watch-02.png",
+                    "../assets/images/products/eaton-cell-watch-03.png",
+                    "../assets/images/products/eaton-cell-watch-04.png",
+                    "../assets/images/products/eaton-cell-watch-05.png",
+                    "../assets/images/products/eaton-cell-watch-06.png",
+                    "../assets/images/products/eaton-cell-watch-07.png",
+                    "../assets/images/products/eaton-cell-watch-08.png",
+                    "../assets/images/products/eaton-cell-watch-09.png"
+                ],
+                "html": "<p>ระบบมอนิเตอร์แบตเตอรี่ <strong>Cellwatch Eaton</strong> สำหรับ SLA/Lithium ติดตามแรงดัน อุณหภูมิ และ IR แบบเรียลไทม์ รองรับ Multi-string, Web dashboard/Alarm และ Modbus/TCP</p>"
+            },
+            "PBMS9000Pro": {
+                "imgs": [
+                    "../assets/images/products/PBMS9000Pro.png",
+                    "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0001.jpg",
+                    "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0002.jpg",
+                    "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0003.jpg",
+                    "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0004.jpg",
+                    "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0005.jpg",
+                    "../assets/images/products/PKESS_-PBMS9000PRO-BMS-System-Final5/PKESS_ PBMS9000PRO BMS System (Final)(5)_page-0006.jpg"
+                ],
+                "html": "<p><strong>PBMS9000Pro</strong> ระบบติดตามสถานะแบตเตอรี่แบบเรียลไทม์ ครอบคลุมแรงดัน กระแส อุณหภูมิ และ IR รองรับ Multi-String/Multi-Bank และ Modbus/TCP</p>"
+            },
+            "PKBMS": {
+                "imgs": [
+                    "../assets/images/products/PKBMS.png",
+                    "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0001.jpg",
+                    "../assets/images/products/PK-Battery-Monitoring-system-Data-sheet/PK Battery Monitoring system Data sheet_page-0002.jpg"
+                ],
+                "html": "<p><strong>PKBMS</strong> Battery Management System สำหรับงานอุตสาหกรรม: Cell/Pack monitoring, Safety cut-off & balancing, รองรับการเชื่อม SCADA/EMS</p>"
+            }
+        }
+    }
+}
